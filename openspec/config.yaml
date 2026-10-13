@@ -1,0 +1,51 @@
+schema: spec-driven
+
+githubCopilot:
+  cloudAgent: false
+
+context: |
+  Project: NossaBiblioteca.
+
+  Domain: Gestão de livros, categorias, exemplares, leitores, reservas,
+  empréstimos e devoluções.
+
+  Tech stack: Xano como camada de persistência e XanoScript para as tabelas
+  e operações de dados.
+
+  Architecture: As regras de negócio e as permissões devem ser aplicadas no
+  backend. O frontend não é mecanismo de segurança. Preservar os vínculos
+  entre livros, exemplares, leitores e empréstimos.
+
+  Security: Restringir operações administrativas aos bibliotecários, validar
+  entradas e impedir que um exemplar seja emprestado simultaneamente.
+
+  Development: Desenvolver mudanças incrementalmente utilizando OpenSpec.
+  Preservar contratos existentes e manter alterações focadas no escopo da
+  change.
+
+  Language: Escrever os artefatos OpenSpec em português brasileiro.
+
+rules:
+  proposal:
+    - Descrever claramente o problema, objetivo e escopo da mudança.
+    - Explicitar o que ficará fora do escopo quando houver risco de ambiguidade.
+
+  specs:
+    - Escrever requisitos verificáveis e alinhados ao domínio da biblioteca.
+    - Utilizar cenários para comportamentos relevantes e regras de negócio.
+
+  tasks:
+    - Dividir a implementação em tarefas pequenas, ordenadas e verificáveis.
+    - Incluir uma estratégia de validação para cada comportamento alterado.
+
+operations:
+  apply:
+    guidance:
+      - Consultar docs/domain-model.md e os artefatos da change antes de implementar.
+      - Executar as verificações relevantes antes de concluir as tarefas.
+      - Não declarar uma tarefa concluída sem validação reproduzível.
+
+  archive:
+    guidance:
+      - Confirmar que a implementação corresponde à especificação e ao domínio.
+      - Verificar a validação estrita da change antes de arquivar.
