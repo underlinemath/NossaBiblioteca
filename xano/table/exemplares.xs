@@ -4,7 +4,7 @@ table "exemplares" {
     int livro_id
     text codigo filters=trim
     text situacao
-    bool disponivel = true
+    bool disponivel?=true
     timestamp created_at?=now
     timestamp updated_at?=now
   }
@@ -14,4 +14,5 @@ table "exemplares" {
     { type: "btree", field: [{ name: "livro_id" }] },
     { type: "btree|unique", field: [{ name: "codigo" }] }
   ]
+  guid = "bXniuQsLk3PWnRFaXj3pEJTAMMw"
 }

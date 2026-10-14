@@ -10,4 +10,5 @@ table "categorias" {
     { type: "primary", field: [{ name: "id" }] },
     { type: "btree|unique", field: [{ name: "nome" }] }
   ]
+  guid = "KffIYDoJq6hKBQBWzpUSJQjQmrI"
 }

@@ -15,4 +15,5 @@ table "itens_emprestimos" {
     { type: "btree", field: [{ name: "emprestimo_id" }] },
     { type: "btree", field: [{ name: "exemplar_id" }] }
   ]
+  guid = "p-ktiPPkgNaZnPPUW9cYwA2Cj70"
 }

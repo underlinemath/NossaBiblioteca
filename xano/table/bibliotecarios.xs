@@ -14,4 +14,5 @@ table "bibliotecarios" {
     { type: "primary", field: [{ name: "id" }] },
     { type: "btree|unique", field: [{ name: "email" }] }
   ]
+  guid = "nJSU5WTC1DfZ_dVx485pEZXTm78"
 }

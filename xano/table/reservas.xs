@@ -17,4 +17,5 @@ table "reservas" {
     { type: "btree", field: [{ name: "livro_id" }] },
     { type: "btree", field: [{ name: "exemplar_id" }] }
   ]
+  guid = "jkBAjD1lSpi4WoO0AwqFp3VYwr4"
 }

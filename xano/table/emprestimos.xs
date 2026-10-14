@@ -12,4 +12,5 @@ table "emprestimos" {
     { type: "primary", field: [{ name: "id" }] },
     { type: "btree", field: [{ name: "leitor_id" }] }
   ]
+  guid = "r7d3kCByJvcYFLidTyAFUV1aAP8"
 }
