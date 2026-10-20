@@ -1,0 +1,72 @@
+    <!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca • Gestão do acervo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-icon">B</span>
+      <div>
+        <strong>Biblioteca</strong>
+        <small>Gestão do acervo</small>
+      </div>
+    </div>
+
+    <nav id="navigation">
+      <button class="nav-link active" data-page="dashboard">▦ <span>Painel inicial</span></button>
+      <button class="nav-link" data-page="books">▤ <span>Livros</span></button>
+      <button class="nav-link" data-page="readers">♙ <span>Leitores</span></button>
+      <button class="nav-link" data-page="loans">⇄ <span>Empréstimos</span></button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <span class="status-dot"></span> Protótipo local
+      <small>Dados salvos neste navegador</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">SISTEMA DE BIBLIOTECA</p>
+        <h1 id="pageTitle">Painel inicial</h1>
+      </div>
+      <button class="primary" id="quickAdd">＋ Novo cadastro</button>
+    </header>
+
+    <section id="pageContent"></section>
+
+    <footer>
+      Protótipo acadêmico · XanoScript/Xano ainda precisa ser conectado para uso compartilhado.
+    </footer>
+  </main>
+
+  <dialog id="modal">
+    <form id="modalForm" method="dialog">
+      <div class="modal-head">
+        <div>
+          <p class="eyebrow">CADASTRO</p>
+          <h2 id="modalTitle">Novo registro</h2>
+        </div>
+        <button type="button" class="icon-button" id="closeModal" aria-label="Fechar">×</button>
+      </div>
+
+      <div id="modalFields" class="form-grid"></div>
+      <p id="formError" class="error" role="alert"></p>
+
+      <div class="modal-actions">
+        <button type="button" class="secondary" id="cancelModal">Cancelar</button>
+        <button class="primary" type="submit">Salvar registro</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

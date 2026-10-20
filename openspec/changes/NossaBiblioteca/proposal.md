@@ -15,7 +15,7 @@ A NossaBiblioteca precisa gerenciar seu acervo, usuários e empréstimos em um �
 
 ## Scope Notes
 
-Ficam fora da primeira versão multas por atraso, limites e bloqueios de leitores, notificações automáticas, integrações externas, relatórios avançados, aplicativo mobile e gestão administrativa da instituição.
+Ficam fora da primeira versão multas por atraso, bloqueios de leitores, notificações automáticas, integrações externas, relatórios avançados, aplicativo mobile e gestão administrativa da instituição.
 
 As seguintes decisões ainda precisam ser fechadas antes da implementação: reservas para livros indisponíveis, prazo padrão de empréstimo, renovação, exclusão ou inativação de livros e suporte a múltiplos bibliotecários.
 
@@ -25,3 +25,22 @@ As seguintes decisões ainda precisam ser fechadas antes da implementação: res
 - **APIs e dados:** persistência no Xano, com vínculos entre leitores, exemplares e empréstimos.
 - **Acesso:** operações administrativas restritas a bibliotecários; leitores poderão consultar e realizar as operações permitidas.
 - **Próxima etapa:** resolver as decisões pendentes e detalhar os critérios de aceitação por fluxo.
+
+## Capabilities
+
+- `catalogo`: cadastro e consulta de livros, categorias e exemplares.
+- `leitores`: cadastro e consulta de leitores.
+- `circulacao`: reservas, empréstimos, devoluções e disponibilidade dos exemplares.
+- `acesso`: autenticação, permissões por perfil e auditoria das operações.
+
+## Capabilities
+
+### New Capabilities
+- `catalogo`: cadastro e consulta de livros, categorias e exemplares.
+- `leitores`: cadastro e consulta de leitores.
+- `circulacao`: reservas, empréstimos, devoluções e disponibilidade dos exemplares.
+- `acesso`: autenticação, permissões por perfil e auditoria das operações.
+
+### Modified Capabilities
+
+Nenhuma.
