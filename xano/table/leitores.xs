@@ -1,4 +1,5 @@
 table "leitores" {
+  auth = true
   schema {
     int id
     text nome filters=trim
