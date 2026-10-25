@@ -1,5 +1,6 @@
-table "bibliotecarios" {
+table bibliotecarios {
   auth = true
+
   schema {
     int id
     text nome filters=trim
@@ -12,8 +13,9 @@ table "bibliotecarios" {
   }
 
   index = [
-    { type: "primary", field: [{ name: "id" }] },
-    { type: "btree|unique", field: [{ name: "email" }] }
+    {type: "primary", field: [{name: "id"}]}
+    {type: "btree|unique", field: [{name: "email"}]}
   ]
+
   guid = "nJSU5WTC1DfZ_dVx485pEZXTm78"
 }

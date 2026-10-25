@@ -1,0 +1,14 @@
+# Artefatos locais de inspeção e captura
+/.playwright-mcp/
+/*.yml
+/*.yaml
+/*.png
+
+# Cópias locais do workspace Xano; a fonte versionada é /xano/
+/xano-backend/
+/xano-dev/
+
+# Arquivos temporários comuns
+*.log
+*.tmp
+*.swp

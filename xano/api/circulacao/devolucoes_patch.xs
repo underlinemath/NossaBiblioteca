@@ -27,4 +27,5 @@ query "itens-emprestimos/{id}/devolucao" verb=PATCH {
   }
 
   response = { item: $item, exemplar: $exemplar }
+  guid = "RCMrJQgz_JU_8fkbrJc3WTZ6P-w"
 }

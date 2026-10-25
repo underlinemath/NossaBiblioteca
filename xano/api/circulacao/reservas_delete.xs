@@ -30,4 +30,5 @@ query "reservas/{id}" verb=DELETE {
   }
 
   response = $cancelada
+  guid = "3igfPa-DA4FhhqwSwnje2CyZzm0"
 }

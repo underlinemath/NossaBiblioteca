@@ -1,4 +1,6 @@
-table "exemplares" {
+table exemplares {
+  auth = false
+
   schema {
     int id
     int livro_id
@@ -10,9 +12,10 @@ table "exemplares" {
   }
 
   index = [
-    { type: "primary", field: [{ name: "id" }] },
-    { type: "btree", field: [{ name: "livro_id" }] },
-    { type: "btree|unique", field: [{ name: "codigo" }] }
+    {type: "primary", field: [{name: "id"}]}
+    {type: "btree", field: [{name: "livro_id"}]}
+    {type: "btree|unique", field: [{name: "codigo"}]}
   ]
+
   guid = "bXniuQsLk3PWnRFaXj3pEJTAMMw"
 }

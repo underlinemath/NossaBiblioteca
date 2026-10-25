@@ -26,4 +26,5 @@ query "exemplares/{id}" verb=PATCH {
   }
 
   response = $exemplar
+  guid = "wkmXFT0xMF5kMR6GJ2e58E_r4OE"
 }

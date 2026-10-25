@@ -1,7 +1,7 @@
 query "exemplares/{id}" verb=DELETE {
   api_group = "administracao"
   auth = "bibliotecarios"
-  description = "Inativa um exemplar"
+  description = "Exclui os dados de um exemplar"
 
   input {
     int id
@@ -16,4 +16,5 @@ query "exemplares/{id}" verb=DELETE {
   }
 
   response = $exemplar
+  guid = "DvbpxEcHQKjac7BTGc8B0kRz0AI"
 }

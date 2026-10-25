@@ -30,4 +30,5 @@ query "livros/{id}" verb=PATCH {
   }
 
   response = $livro
+  guid = "lgnTxyCQ1XsOUkaiPZOF6M4iHns"
 }

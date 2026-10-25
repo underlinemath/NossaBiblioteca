@@ -87,6 +87,17 @@ A NossaBiblioteca é um software para organizar seu acervo de livros, cadastrar 
 - Auditoria: o sistema deve registrar as datas e os usuários responsáveis pelas operações.
 - Integrações: não haverá integração externa na primeira versão.
 
+## Organização técnica atual
+
+- A interface web estática é composta por `index.html`, `app.js` e `style.css`
+  na raiz do repositório.
+- O diretório `xano/` é a fonte versionada das tabelas, APIs, grupos de API e
+  workspace Xano da aplicação.
+- Os diretórios de capturas, logs e cópias locais de workspace não fazem parte
+  da fonte oficial e devem permanecer fora do controle de versão.
+- As regras de autenticação, autorização, validação e integridade continuam
+  sob responsabilidade do backend Xano.
+
 ## Critérios de sucesso
 
 - Um bibliotecário consegue cadastrar, editar e consultar livros, categorias, exemplares e leitores, e cada registro recebe um identificador único.

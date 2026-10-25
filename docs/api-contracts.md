@@ -3,6 +3,10 @@
 As APIs Xano são agrupadas por responsabilidade. Todas as respostas são JSON.
 Erros usam o formato `{ "error": { "code": "string", "message": "string" } }`.
 
+Os arquivos de referência versionados ficam em `xano/api/`. Cópias locais de
+workspaces Xano e capturas de inspeção não são fontes de contrato e não devem
+ser usadas para publicar alterações.
+
 ## Catálogo
 
 Base: `nossabiblioteca-catalogo`

@@ -1,24 +1,25 @@
-query "exemplares" verb=POST {
+// Cadastra um exemplar
+query exemplares verb=POST {
   api_group = "administracao"
   auth = "bibliotecarios"
-  description = "Cadastra um exemplar"
 
   input {
     int livro_id
-    text codigo filters=trim
-    text situacao?="disponivel"
+    text isbn filters=trim
+    text situacao?=disponivel
   }
 
   stack {
-    db.add "exemplares" {
+    db.add exemplares {
       data = {
-        livro_id: $input.livro_id,
-        codigo: $input.codigo,
-        situacao: $input.situacao,
+        livro_id  : $input.livro_id
+        codigo    : $input.isbn
+        situacao  : $input.situacao
         disponivel: true
       }
     } as $exemplar
   }
 
   response = $exemplar
+  guid = "r8wuzFAAdygJD_t5YqwBOc1qHZs"
 }

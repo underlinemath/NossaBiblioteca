@@ -1,4 +1,6 @@
-table "emprestimos" {
+table emprestimos {
+  auth = false
+
   schema {
     int id
     int leitor_id
@@ -9,8 +11,9 @@ table "emprestimos" {
   }
 
   index = [
-    { type: "primary", field: [{ name: "id" }] },
-    { type: "btree", field: [{ name: "leitor_id" }] }
+    {type: "primary", field: [{name: "id"}]}
+    {type: "btree", field: [{name: "leitor_id"}]}
   ]
+
   guid = "r7d3kCByJvcYFLidTyAFUV1aAP8"
 }

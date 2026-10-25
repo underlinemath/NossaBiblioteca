@@ -26,4 +26,5 @@ query "leitores/{id}" verb=PATCH {
   }
 
   response = $leitor
+  guid = "ik9vPLvA0_AMixn6TiKxYJzS7fg"
 }

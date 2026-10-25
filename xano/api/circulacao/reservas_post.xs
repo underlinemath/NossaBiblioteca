@@ -1,7 +1,7 @@
-query "reservas" verb=POST {
+// Cria uma reserva para o leitor autenticado
+query reservas verb=POST {
   api_group = "circulacao"
   auth = "leitores"
-  description = "Cria uma reserva para o leitor autenticado"
 
   input {
     int livro_id?
@@ -10,9 +10,9 @@ query "reservas" verb=POST {
   }
 
   stack {
-    db.query "reservas" {
+    db.query reservas {
       where = $db.reservas.leitor_id == $auth.id && $db.reservas.situacao == "pendente" && (($input.livro_id != null && $db.reservas.livro_id == $input.livro_id) || ($input.exemplar_id != null && $db.reservas.exemplar_id == $input.exemplar_id))
-      return = { type: "exists" }
+      return = {type: "exists"}
     } as $duplicada
 
     conditional {
@@ -24,16 +24,17 @@ query "reservas" verb=POST {
       }
     }
 
-    db.add "reservas" {
+    db.add reservas {
       data = {
-        leitor_id: $auth.id,
-        livro_id: $input.livro_id,
-        exemplar_id: $input.exemplar_id,
-        modalidade: $input.modalidade,
-        situacao: "pendente"
+        leitor_id  : $auth.id
+        livro_id   : $input.livro_id
+        exemplar_id: $input.exemplar_id
+        modalidade : $input.modalidade
+        situacao   : "pendente"
       }
     } as $reserva
   }
 
   response = $reserva
+  guid = "iJXnBQsDnn0CFvdjWFboIUF1KTw"
 }

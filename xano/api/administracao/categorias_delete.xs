@@ -15,4 +15,5 @@ query "categorias/{id}" verb=DELETE {
   }
 
   response = { deleted: true, id: $input.id }
+  guid = "xDH3uQi39rdJL4V3i9UabnuJoPw"
 }

@@ -16,6 +16,8 @@ devoluções.
 - [Requisitos não funcionais](#requisitos-não-funcionais)
 - [Critérios de sucesso](#critérios-de-sucesso)
 - [Arquitetura e tecnologia](#arquitetura-e-tecnologia)
+- [Estrutura do repositório](#estrutura-do-repositório)
+- [Validação local](#validação-local)
 - [Diretrizes de desenvolvimento](#diretrizes-de-desenvolvimento)
 - [Decisões pendentes](#decisões-pendentes)
 - [Documentos de referência](#documentos-de-referência)
@@ -283,6 +285,37 @@ A primeira versão será considerada alinhada ao objetivo quando:
 7. As operações administrativas permanecerem restritas aos bibliotecários.
 
 ## Arquitetura e tecnologia
+
+O frontend atual é uma aplicação estática composta por `index.html`, `app.js` e
+`style.css` na raiz do projeto. A persistência, as tabelas e as APIs são
+descritas em XanoScript no diretório `xano/`. O backend é a fonte de verdade
+para autenticação, autorização, validação e integridade dos dados.
+
+## Estrutura do repositório
+
+- `index.html`, `app.js`, `style.css`: interface web estática.
+- `xano/`: fonte versionada das tabelas, grupos de API, endpoints e workspace
+  Xano da NossaBiblioteca.
+- `docs/`: visão do produto, modelo de domínio e contratos das APIs.
+- `openspec/`: propostas, designs, tarefas e especificações do projeto.
+- `.claude/`, `.gemini/`, `.opencode/`: integrações locais para os fluxos
+  OpenSpec; não são artefatos de execução da aplicação.
+
+Capturas de tela, dumps YAML, logs do Playwright e cópias locais de workspace
+Xano não fazem parte da fonte oficial e são ignorados pelo `.gitignore`.
+
+## Validação local
+
+Antes de publicar uma alteração:
+
+1. Execute `openspec validate <change> --strict` para validar a change ativa.
+2. Revise os contratos em `docs/api-contracts.md` contra os arquivos de
+   endpoint em `xano/api/`.
+3. Valide os arquivos XanoScript no workspace Xano de desenvolvimento, quando
+   disponível, sem aplicar mudanças remotas automaticamente.
+4. Abra `index.html` em um servidor estático local e verifique os fluxos de
+   autenticação, catálogo e navegação afetados.
+5. Revise `git diff` e `git status` antes de criar o commit.
 
 - **Persistência:** Xano.
 - **Modelagem e operações de dados:** XanoScript.

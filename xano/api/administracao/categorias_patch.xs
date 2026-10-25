@@ -17,4 +17,5 @@ query "categorias/{id}" verb=PATCH {
   }
 
   response = $categoria
+  guid = "daDtPjBNLnqxiA37kHoXmSGbPBQ"
 }

@@ -16,4 +16,5 @@ query "leitores/{id}" verb=DELETE {
   }
 
   response = $leitor
+  guid = "KO9FCsJ9ojXbRBd9zufvSpcWA20"
 }

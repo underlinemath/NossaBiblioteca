@@ -1,25 +1,26 @@
-query "leitores" verb=POST {
+// Cadastra um leitor
+query leitores verb=POST {
   api_group = "administracao"
   auth = "bibliotecarios"
-  description = "Cadastra um leitor"
 
   input {
     text nome filters=trim
     email email
     text telefone?
-    text status?="ativo"
+    text status?=ativo
   }
 
   stack {
-    db.add "leitores" {
+    db.add leitores {
       data = {
-        nome: $input.nome,
-        email: $input.email,
-        telefone: $input.telefone,
-        status: $input.status
+        nome    : $input.nome
+        email   : $input.email
+        telefone: $input.telefone
+        status  : $input.status
       }
     } as $leitor
   }
 
   response = $leitor
+  guid = "w_xGzvybpSMmTtbLbWrbj1zvLuA"
 }

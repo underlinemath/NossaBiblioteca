@@ -1,4 +1,6 @@
-table "categorias" {
+table categorias {
+  auth = false
+
   schema {
     int id
     text nome filters=trim
@@ -7,8 +9,9 @@ table "categorias" {
   }
 
   index = [
-    { type: "primary", field: [{ name: "id" }] },
-    { type: "btree|unique", field: [{ name: "nome" }] }
+    {type: "primary", field: [{name: "id"}]}
+    {type: "btree|unique", field: [{name: "nome"}]}
   ]
+
   guid = "KffIYDoJq6hKBQBWzpUSJQjQmrI"
 }

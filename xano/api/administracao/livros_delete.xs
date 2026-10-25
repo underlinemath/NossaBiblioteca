@@ -16,4 +16,5 @@ query "livros/{id}" verb=DELETE {
   }
 
   response = $livro
+  guid = "D9Y1OGB5FSbiwUkBnv5RTfXDVBI"
 }
