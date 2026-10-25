@@ -23,7 +23,7 @@
 - [x] 4.1 Executar a validação estrita do OpenSpec e confirmar que a change está completa.
 - [x] 4.2 Validar os arquivos XanoScript e os fluxos documentados de catálogo, administração e circulação; registrar limitações quando o ambiente Xano não estiver disponível.
 - [x] 4.3 Revisar `git diff`, `git diff --cached` e a lista de arquivos a publicar; criar um commit focado e verificar seu conteúdo.
-- [ ] 4.4 Atualizar a branch a partir de `origin/main` sem sobrescrever alterações e enviar o commit ao repositório remoto; verificar o estado final do remoto.
+- [x] 4.4 Atualizar a branch a partir de `origin/main` sem sobrescrever alterações e enviar o commit ao repositório remoto; verificar o estado final do remoto.
 
 ## Workflow follow-up
 
