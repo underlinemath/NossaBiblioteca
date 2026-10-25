@@ -9,4 +9,5 @@ table "autores" {
     index = [
          { type: "primary", field: [{name: "id"}] }
     ]
+    guid = "NpuOEyhwON0Nrw1zA-aTnAPcswA"
 }

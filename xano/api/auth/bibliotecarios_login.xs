@@ -22,9 +22,9 @@ query "auth/bibliotecarios/login" verb=POST {
       }
     }
 
-    security.validate_password {
-      plain = $input.senha
-      hashed = $bibliotecario.senha
+    security.check_password {
+      text_password = $input.senha
+      hash_password = $bibliotecario.senha
     } as $senha_valida
 
     conditional {
@@ -37,14 +37,15 @@ query "auth/bibliotecarios/login" verb=POST {
     }
 
     security.create_auth_token {
-      dbtable = "bibliotecarios"
+      table = "bibliotecarios"
+      extras = {}
       id = $bibliotecario.id
       expiration = 86400
     } as $auth_token
   }
 
   response = {
-    authToken: $auth_token.token
+    authToken: $auth_token
     user     : {
       id         : $bibliotecario.id
       nome       : $bibliotecario.nome
@@ -53,4 +54,5 @@ query "auth/bibliotecarios/login" verb=POST {
       status     : $bibliotecario.status
     }
   }
+  guid = "59sJ5fWm3dgc0-xTFeWY4vICEgM"
 }

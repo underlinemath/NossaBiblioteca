@@ -22,9 +22,9 @@ query "auth/leitores/login" verb=POST {
       }
     }
 
-    security.validate_password {
-      plain = $input.senha
-      hashed = $leitor.senha
+    security.check_password {
+      text_password = $input.senha
+      hash_password = $leitor.senha
     } as $senha_valida
 
     conditional {
@@ -37,14 +37,15 @@ query "auth/leitores/login" verb=POST {
     }
 
     security.create_auth_token {
-      dbtable = "leitores"
+      table = "leitores"
+      extras = {}
       id = $leitor.id
       expiration = 86400
     } as $auth_token
   }
 
   response = {
-    authToken: $auth_token.token
+    authToken: $auth_token
     user     : {
       id      : $leitor.id
       nome    : $leitor.nome
@@ -53,4 +54,5 @@ query "auth/leitores/login" verb=POST {
       status  : $leitor.status
     }
   }
+  guid = "Zoks7NOoDbRgtxhLAGkwNLhIP8A"
 }
