@@ -16,6 +16,6 @@ query categorias verb=GET {
     } as $categorias
   }
 
-  response = $categorias
+  response = {data: $categorias, error: null}
   guid = "MWBD2lgBxHpc7xKU9Ujj3AY8HK4"
 }

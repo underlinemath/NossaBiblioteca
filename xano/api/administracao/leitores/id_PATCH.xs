@@ -25,6 +25,6 @@ query "leitores/{id}" verb=PATCH {
     } as $leitor
   }
 
-  response = $leitor
+  response = {data: $leitor, error: null}
   guid = "ik9vPLvA0_AMixn6TiKxYJzS7fg"
 }

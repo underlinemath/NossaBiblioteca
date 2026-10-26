@@ -14,6 +14,10 @@ query "livros/{id}" verb=PATCH {
   }
 
   stack {
+    db.get categorias {field_name = "id", field_value = $input.categoria_id} as $categoria
+    conditional {
+      if ($categoria == null) {throw {name: "ValidationError", value: "Categoria não encontrada"}}
+    }
     db.edit livros {
       field_name = "id"
       field_value = $input.id
@@ -29,6 +33,6 @@ query "livros/{id}" verb=PATCH {
     } as $livro
   }
 
-  response = $livro
+  response = {data: $livro, error: null}
   guid = "lgnTxyCQ1XsOUkaiPZOF6M4iHns"
 }

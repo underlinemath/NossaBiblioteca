@@ -15,6 +15,6 @@ query "livros/{id}" verb=DELETE {
     } as $livro
   }
 
-  response = $livro
+  response = {data: $livro, error: null}
   guid = "D9Y1OGB5FSbiwUkBnv5RTfXDVBI"
 }

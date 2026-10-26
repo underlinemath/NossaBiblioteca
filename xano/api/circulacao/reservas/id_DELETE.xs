@@ -29,6 +29,6 @@ query "reservas/{id}" verb=DELETE {
     } as $cancelada
   }
 
-  response = $cancelada
+  response = {data: $cancelada, error: null}
   guid = "3igfPa-DA4FhhqwSwnje2CyZzm0"
 }

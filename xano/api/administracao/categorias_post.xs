@@ -13,6 +13,6 @@ query categorias verb=POST {
     } as $categoria
   }
 
-  response = $categoria
+  response = {data: $categoria, error: null}
   guid = "RU47Xq1Mmu6DIi9Q7aEquNR0-G4"
 }

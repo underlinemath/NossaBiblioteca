@@ -20,6 +20,6 @@ query exemplares verb=POST {
     } as $exemplar
   }
 
-  response = $exemplar
+  response = {data: $exemplar, error: null}
   guid = "r8wuzFAAdygJD_t5YqwBOc1qHZs"
 }

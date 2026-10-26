@@ -21,6 +21,6 @@ query leitores verb=POST {
     } as $leitor
   }
 
-  response = $leitor
+  response = {data: $leitor, error: null}
   guid = "w_xGzvybpSMmTtbLbWrbj1zvLuA"
 }

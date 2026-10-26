@@ -52,11 +52,11 @@ query emprestimos verb=POST {
     }
   }
 
-  response = {
+  response = {data: {
     emprestimo: $emprestimo
     item      : $item
     exemplar  : $exemplar_atualizado
-  }
+  }, error: null}
 
   guid = "-Ek01LiBbDaSf9vst27wF4Cfjnw"
 }

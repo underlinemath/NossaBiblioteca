@@ -12,6 +12,10 @@ query livros verb=POST {
   }
 
   stack {
+    db.get categorias {field_name = "id", field_value = $input.categoria_id} as $categoria
+    conditional {
+      if ($categoria == null) {throw {name: "ValidationError", value: "Categoria não encontrada"}}
+    }
     db.add livros {
       data = {
         categoria_id: $input.categoria_id
@@ -24,6 +28,6 @@ query livros verb=POST {
     } as $livro
   }
 
-  response = $livro
+  response = {data: $livro, error: null}
   guid = "YQnw93KDY0PNqjBP9oC9LC6h0xc"
 }

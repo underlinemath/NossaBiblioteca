@@ -14,6 +14,6 @@ query emprestimos verb=GET {
     } as $emprestimos
   }
 
-  response = $emprestimos
+  response = {data: $emprestimos, error: null}
   guid = "_dhiG6YcCczJEPtShpyJYSGFYe8"
 }

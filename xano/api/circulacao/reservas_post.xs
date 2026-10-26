@@ -35,6 +35,6 @@ query reservas verb=POST {
     } as $reserva
   }
 
-  response = $reserva
+  response = {data: $reserva, error: null}
   guid = "iJXnBQsDnn0CFvdjWFboIUF1KTw"
 }

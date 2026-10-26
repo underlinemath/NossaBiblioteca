@@ -9,6 +9,10 @@ query "categorias/{id}" verb=PATCH {
   }
 
   stack {
+    db.get categorias {field_name = "id", field_value = $input.id} as $existente
+    conditional {
+      if ($existente == null) {throw {name: "NotFoundError", value: "Categoria não encontrada"}}
+    }
     db.edit categorias {
       field_name = "id"
       field_value = $input.id
@@ -16,6 +20,6 @@ query "categorias/{id}" verb=PATCH {
     } as $categoria
   }
 
-  response = $categoria
+  response = {data: $categoria, error: null}
   guid = "daDtPjBNLnqxiA37kHoXmSGbPBQ"
 }

@@ -9,6 +9,12 @@ query "itens-emprestimos/{id}/devolucao" verb=PATCH {
   }
 
   stack {
+    db.get itens_emprestimos {field_name = "id", field_value = $input.id} as $item_existente
+    conditional {
+      if ($item_existente == null || $item_existente.situacao == "devolvido") {
+        throw {name: "ConflictError", value: "Item já devolvido ou não encontrado"}
+      }
+    }
     db.edit itens_emprestimos {
       field_name = "id"
       field_value = $input.id
@@ -30,6 +36,6 @@ query "itens-emprestimos/{id}/devolucao" verb=PATCH {
     } as $exemplar
   }
 
-  response = {item: $item, exemplar: $exemplar}
+  response = {data: {item: $item, exemplar: $exemplar}, error: null}
   guid = "RCMrJQgz_JU_8fkbrJc3WTZ6P-w"
 }

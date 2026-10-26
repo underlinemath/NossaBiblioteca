@@ -44,7 +44,7 @@ query "auth/bibliotecarios/login" verb=POST {
     } as $auth_token
   }
 
-  response = {
+  response = {data: {
     authToken: $auth_token
     user     : {
       id         : $bibliotecario.id
@@ -53,6 +53,6 @@ query "auth/bibliotecarios/login" verb=POST {
       permissoes : $bibliotecario.permissoes
       status     : $bibliotecario.status
     }
-  }
+  }, error: null}
   guid = "59sJ5fWm3dgc0-xTFeWY4vICEgM"
 }

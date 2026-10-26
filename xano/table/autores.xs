@@ -1,13 +1,17 @@
-table "autores" {
-    auth = true
-    schema {
-        int id
-        text nome_autor
-        text livro_id
-    }
+table autores {
+  auth = false
 
-    index = [
-         { type: "primary", field: [{name: "id"}] }
-    ]
-    guid = "NpuOEyhwON0Nrw1zA-aTnAPcswA"
+  schema {
+    int id
+    text nome filters=trim
+    timestamp created_at?=now
+    timestamp updated_at?=now
+  }
+
+  index = [
+    {type: "primary", field: [{name: "id"}]}
+    {type: "btree|unique", field: [{name: "nome"}]}
+  ]
+
+  guid = "NpuOEyhwON0Nrw1zA-aTnAPcswA"
 }

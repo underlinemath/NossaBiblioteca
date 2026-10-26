@@ -14,6 +14,6 @@ query reservas verb=GET {
     } as $reservas
   }
 
-  response = $reservas
+  response = {data: $reservas, error: null}
   guid = "CLZ4szlkMEyxbURAVYOjzyZzxGA"
 }

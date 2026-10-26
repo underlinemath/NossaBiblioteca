@@ -32,9 +32,17 @@ Representa o título catalogado, independentemente da quantidade de exemplares f
 - `id`
 - `título`
 - `autor`
+- `autor_ids` (associações normalizadas em `livros_autores`)
 - `isbn`
 - `descrição`
 - `categoria_id`
+
+### Autor
+
+Representa uma pessoa autora que pode estar associada a vários livros.
+
+- `id`
+- `nome`
 
 ### Categoria
 
@@ -85,6 +93,7 @@ Relaciona cada exemplar físico ao empréstimo e controla a devolução individu
 ## Relacionamentos
 
 - Uma `Categoria` pode possuir muitos `Livros`; cada `Livro` pertence a uma `Categoria`.
+- Um `Livro` pode possuir muitos `Autores` e um `Autor` pode possuir muitos `Livros`, por meio de `livros_autores`.
 - Um `Livro` pode possuir muitos `Exemplares`; cada `Exemplar` pertence a um `Livro`.
 - Um `Leitor` pode possuir muitas `Reservas`; cada `Reserva` pertence a um `Leitor`.
 - Um `Leitor` pode possuir muitos `Empréstimos`; cada `Empréstimo` pertence a um `Leitor`.
@@ -101,4 +110,5 @@ Relaciona cada exemplar físico ao empréstimo e controla a devolução individu
 - Cada item pode ser devolvido independentemente dos demais itens do mesmo empréstimo.
 - O empréstimo é considerado concluído quando todos os seus itens tiverem sido devolvidos.
 - Somente bibliotecários podem cadastrar livros, leitores e exemplares e registrar devoluções.
+- Autores e associações entre autores e livros são mantidos pelo backend; cada associação é única.
 - As decisões sobre reservas de livros indisponíveis, prazo de empréstimo, renovação, exclusão ou inativação de livros e múltiplos bibliotecários ainda estão pendentes.

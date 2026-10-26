@@ -11,8 +11,11 @@ query "livros/{id}" verb=GET {
       where = $db.livros.id == $input.id && $db.livros.ativo == true
       return = {type: "single"}
     } as $livro
+    conditional {
+      if ($livro == null) {throw {name: "NotFoundError", value: "Livro não encontrado"}}
+    }
   }
 
-  response = $livro
+  response = {data: $livro, error: null}
   guid = "PuBGXUKB__50ChTOM1RYhfyRLu8"
 }

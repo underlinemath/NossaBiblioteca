@@ -19,6 +19,6 @@ query leitores verb=GET {
     } as $leitores
   }
 
-  response = $leitores
+  response = {data: $leitores, error: null}
   guid = "UANlrqcAvBqp-lqXIWizyc2e7JU"
 }

@@ -46,7 +46,7 @@ query "auth/leitores/signup" verb=POST {
     } as $auth_token
   }
 
-  response = {
+  response = {data: {
     authToken: $auth_token
     user     : {
       id      : $leitor.id
@@ -55,6 +55,6 @@ query "auth/leitores/signup" verb=POST {
       telefone: $leitor.telefone
       status  : $leitor.status
     }
-  }
+  }, error: null}
   guid = "DMAd2cDuxPvMQzL3c2reWxPwvHc"
 }

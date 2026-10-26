@@ -19,6 +19,6 @@ query exemplares verb=GET {
     } as $exemplares
   }
 
-  response = $exemplares
+  response = {data: $exemplares, error: null}
   guid = "wdQhyMsuPGD93jVH7EsE7b8ecGQ"
 }

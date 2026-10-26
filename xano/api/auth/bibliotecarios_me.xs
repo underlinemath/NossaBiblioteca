@@ -13,12 +13,12 @@ query "auth/bibliotecarios/me" verb=GET {
     } as $bibliotecario
   }
 
-  response = {
+  response = {data: {
     id        : $bibliotecario.id
     nome      : $bibliotecario.nome
     email     : $bibliotecario.email
     permissoes: $bibliotecario.permissoes
     status    : $bibliotecario.status
-  }
+  }, error: null}
   guid = "IX5HrlJt7qxGW4_DnWp_kbWyBJs"
 }

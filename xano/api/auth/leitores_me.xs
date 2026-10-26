@@ -13,12 +13,12 @@ query "auth/leitores/me" verb=GET {
     } as $leitor
   }
 
-  response = {
+  response = {data: {
     id      : $leitor.id
     nome    : $leitor.nome
     email   : $leitor.email
     telefone: $leitor.telefone
     status  : $leitor.status
-  }
+  }, error: null}
   guid = "u78xgxEbp4K3UDqE5mc3FNJpro8"
 }

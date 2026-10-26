@@ -26,8 +26,8 @@ Base: `nossabiblioteca-administracao`. Requer token de bibliotecário.
 | POST | `/categorias` | `{ "nome": "string" }` | Categoria criada |
 | PATCH | `/categorias/{id}` | `{ "nome": "string" }` | Categoria atualizada |
 | DELETE | `/categorias/{id}` | — | `{ "deleted": true, "id": number }` |
-| POST | `/livros` | categoria, título, autor, ISBN e descrição | Livro criado |
-| PATCH | `/livros/{id}` | Campos editáveis do livro | Livro atualizado |
+| POST | `/livros` | categoria, título, `autor` legado, `autor_ids?`, ISBN e descrição | Livro criado |
+| PATCH | `/livros/{id}` | Campos editáveis do livro e `autor_ids?` | Livro atualizado |
 | POST | `/exemplares` | `livro_id`, `codigo`, `situacao?` | Exemplar criado |
 | PATCH | `/exemplares/{id}` | Campos editáveis do exemplar | Exemplar atualizado |
 | GET | `/leitores` | `busca?`, `page?` | Lista paginada de leitores |
@@ -49,3 +49,7 @@ Base: `nossabiblioteca-circulacao`.
 
 Criação de empréstimo deve retornar conflito quando o exemplar não estiver
 disponível. Devoluções e alterações administrativas exigem bibliotecário.
+
+Autores são administrados como entidades próprias e relacionados a livros pela
+tabela intermediária `livros_autores`. O campo textual `autor` permanece na
+resposta durante a transição para não quebrar clientes existentes.
