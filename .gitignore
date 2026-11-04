@@ -12,3 +12,7 @@
 *.log
 *.tmp
 *.swp
+
+# Configuração local e segredos do carregador Xano
+.env.local
+.env.*.local
