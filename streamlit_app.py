@@ -1,9 +1,3 @@
-import requests
-API_TOKEN = "COLE_SEU_TOKEN_LOCALMENTE"
-HEADERS = {
-    "Authorization": f"Bearer {API_TOKEN}"
-}
-API_CATALOGO = "https://x8ki-letl-twmt.n7.xano.io/api:nossabiblioteca-catalogo"
 import streamlit as st
 from datetime import date, timedelta
 
@@ -12,6 +6,53 @@ st.set_page_config(
     page_icon="📚",
     layout="wide"
 )
+
+from pathlib import Path
+
+if "tema_biblioteca" not in st.session_state:
+    st.session_state.tema_biblioteca = "Claro"
+
+tema = st.sidebar.selectbox(
+    "Tema visual",
+    ["Claro", "Escuro"],
+    key="tema_biblioteca"
+)
+
+def aplicar_estilo_biblioteca(tema):
+    caminho_css = Path("assets/interface.css")
+
+    css = caminho_css.read_text(encoding="utf-8")
+
+    if tema == "Claro":
+        cores = {
+            "PAGE_OVERLAY": "rgba(245, 239, 222, 0.72)",
+            "GLASS_BG": "rgba(255, 250, 238, 0.82)",
+            "GLASS_STRONG": "rgba(255, 250, 238, 0.94)",
+            "TEXT_COLOR": "#26352a",
+            "MUTED_COLOR": "#647263",
+            "BORDER_COLOR": "rgba(111, 91, 53, 0.22)",
+            "INPUT_BG": "rgba(255, 255, 248, 0.92)",
+            "SHADOW_COLOR": "rgba(35, 45, 30, 0.12)",
+        }
+    else:
+        cores = {
+            "PAGE_OVERLAY": "rgba(10, 19, 13, 0.78)",
+            "GLASS_BG": "rgba(20, 31, 24, 0.84)",
+            "GLASS_STRONG": "rgba(20, 31, 24, 0.95)",
+            "TEXT_COLOR": "#f0eadc",
+            "MUTED_COLOR": "#c0b8a5",
+            "BORDER_COLOR": "rgba(197, 161, 90, 0.28)",
+            "INPUT_BG": "rgba(25, 38, 29, 0.95)",
+            "SHADOW_COLOR": "rgba(0, 0, 0, 0.30)",
+        }
+
+    for nome, valor in cores.items():
+        css = css.replace("{{" + nome + "}}", valor)
+
+
+    st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
+
+aplicar_estilo_biblioteca(tema)
 
 if "livros" not in st.session_state:
     st.session_state.livros = [
