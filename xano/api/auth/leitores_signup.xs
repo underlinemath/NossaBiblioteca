@@ -24,15 +24,11 @@ query "auth/leitores/signup" verb=POST {
       }
     }
 
-    var $senha_hash {
-      value = $input.senha|security.hash_password
-    }
-
     db.add leitores {
       data = {
         nome    : $input.nome
         email   : $input.email
-        senha   : $senha_hash
+        senha   : $input.senha
         telefone: $input.telefone
         status  : "ativo"
       }

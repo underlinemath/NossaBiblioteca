@@ -14,9 +14,17 @@ query "livros/{id}" verb=PATCH {
   }
 
   stack {
-    db.get categorias {field_name = "id", field_value = $input.categoria_id} as $categoria
+    db.get categorias {
+      field_name = "id"
+      field_value = $input.categoria_id
+    } as $categoria
     conditional {
-      if ($categoria == null) {throw {name: "ValidationError", value: "Categoria não encontrada"}}
+      if ($categoria == null) {
+        throw {
+          name = "ValidationError"
+          value = "Categoria não encontrada"
+        }
+      }
     }
     db.edit livros {
       field_name = "id"

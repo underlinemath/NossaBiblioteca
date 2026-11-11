@@ -13,4 +13,5 @@ query "livros/{id}/autores" verb=GET {
   }
 
   response = {data: $associacoes, error: null}
+  guid = "Egu3Auc7zmIpsXznKZ0e1uIZcMo"
 }

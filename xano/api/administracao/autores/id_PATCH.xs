@@ -9,9 +9,17 @@ query "autores/{id}" verb=PATCH {
   }
 
   stack {
-    db.get autores {field_name = "id", field_value = $input.id} as $autor
+    db.get autores {
+      field_name = "id"
+      field_value = $input.id
+    } as $autor
     conditional {
-      if ($autor == null) {throw {name: "NotFoundError", value: "Autor não encontrado"}}
+      if ($autor == null) {
+        throw {
+          name = "NotFoundError"
+          value = "Autor não encontrado"
+        }
+      }
     }
     db.edit autores {
       field_name = "id"
@@ -21,4 +29,5 @@ query "autores/{id}" verb=PATCH {
   }
 
   response = {data: $atualizado, error: null}
+  guid = "OwTHhxdPNXfOL2kdhwsAOLudNeM"
 }

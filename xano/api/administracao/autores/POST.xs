@@ -15,7 +15,10 @@ query autores verb=POST {
 
     conditional {
       if ($existente != null) {
-        throw {name: "ConflictError", value: "Já existe um autor com este nome"}
+        throw {
+          name = "ConflictError"
+          value = "Já existe um autor com este nome"
+        }
       }
     }
 
@@ -25,4 +28,5 @@ query autores verb=POST {
   }
 
   response = {data: $autor, error: null}
+  guid = "HPD-vni5PNmWklE6QiI5LfGjdaE"
 }

@@ -19,6 +19,10 @@ vínculos entre catálogo, leitores, reservas e empréstimos permanecem íntegro
   autorização, paginação, disponibilidade, conflitos e devolução.
 - Confirmar, após cada operação de escrita, a persistência na tabela Xano
   correspondente e os relacionamentos esperados.
+- Reconciliar schemas locais com campos legados existentes no workspace por
+  meio de alterações aditivas, sem remover campos remotos automaticamente.
+- Publicar grupos e endpoints sem definições duplicadas por GUID antes de
+  executar a carga de dados.
 - Produzir dados de limpeza ou isolamento para que a execução possa ser
   repetida sem duplicar registros existentes.
 - Manter os contratos públicos atuais e não introduzir multas, notificações,

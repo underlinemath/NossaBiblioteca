@@ -9,18 +9,39 @@ query "livros/{id}/autores" verb=POST {
   }
 
   stack {
-    db.get livros {field_name = "id", field_value = $input.id} as $livro
-    db.get autores {field_name = "id", field_value = $input.autor_id} as $autor
+    db.get livros {
+      field_name = "id"
+      field_value = $input.id
+    } as $livro
+    db.get autores {
+      field_name = "id"
+      field_value = $input.autor_id
+    } as $autor
     conditional {
-      if ($livro == null || $livro.ativo != true) {throw {name: "NotFoundError", value: "Livro não encontrado"}}
-      if ($autor == null) {throw {name: "NotFoundError", value: "Autor não encontrado"}}
+      if ($livro == null || $livro.ativo != true) {
+        throw {
+          name = "NotFoundError"
+          value = "Livro não encontrado"
+        }
+      }
+      elseif ($autor == null) {
+        throw {
+          name = "NotFoundError"
+          value = "Autor não encontrado"
+        }
+      }
     }
     db.query livros_autores {
       where = $db.livros_autores.livro_id == $input.id && $db.livros_autores.autor_id == $input.autor_id
       return = {type: "exists"}
     } as $duplicada
     conditional {
-      if ($duplicada) {throw {name: "ConflictError", value: "Autor já associado ao livro"}}
+      if ($duplicada) {
+        throw {
+          name = "ConflictError"
+          value = "Autor já associado ao livro"
+        }
+      }
     }
     db.add livros_autores {
       data = {livro_id: $input.id, autor_id: $input.autor_id}
@@ -28,4 +49,5 @@ query "livros/{id}/autores" verb=POST {
   }
 
   response = {data: $associacao, error: null}
+  guid = "FBG6wciRQlLsrpeQtPWX2kX8SGE"
 }

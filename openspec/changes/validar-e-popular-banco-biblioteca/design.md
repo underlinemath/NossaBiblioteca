@@ -53,6 +53,15 @@ repositório.
    - Alternativa rejeitada: considerar apenas HTTP 2xx como sucesso, pois isso
      não garante que associações e estados derivados foram persistidos.
 
+5. **Reconciliação não destrutiva do workspace**
+   - Antes do push, o snapshot remoto será comparado aos schemas locais. Campos
+     legados e relacionamentos já existentes serão preservados localmente; o
+     push só poderá prosseguir quando o dry-run não indicar `DROP_FIELD`.
+     Definições duplicadas do mesmo grupo/GUID serão removidas da fonte local,
+     mantendo uma única definição canônica.
+   - Alternativa rejeitada: usar `--force` sobre um dry-run destrutivo, pois
+     isso poderia apagar dados ou colunas do workspace.
+
 ## Risks / Trade-offs
 
 - **[Ambiente Xano indisponível]** → separar testes de contrato offline dos
@@ -64,3 +73,6 @@ repositório.
 - **[Schema Xano divergir do contrato]** → tratar a divergência como falha,
   registrar rota/tabela/campo e atualizar a especificação antes de corrigir a
   implementação.
+- **[Credencial válida ser rejeitada pelo endpoint]** → não fazer fallback
+  inseguro nem registrar senha; interromper a carga antes da primeira escrita,
+  confirmar o e-mail no workspace e exigir correção/redefinição no Xano.

@@ -17,4 +17,5 @@ query autores verb=GET {
   }
 
   response = {data: $autores, error: null}
+  guid = "3Zskrbk5JXiqrP2lNYfuSg4tNZw"
 }

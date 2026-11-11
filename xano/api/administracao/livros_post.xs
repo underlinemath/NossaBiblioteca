@@ -13,19 +13,43 @@ query livros verb=POST {
   }
 
   stack {
-    db.get categorias {field_name = "id", field_value = $input.categoria_id} as $categoria
+    db.get categorias {
+      field_name = "id"
+      field_value = $input.categoria_id
+    } as $categoria
     conditional {
-      if ($categoria == null) {throw {name: "ValidationError", value: "Categoria não encontrada"}}
+      if ($categoria == null) {
+        throw {
+          name = "ValidationError"
+          value = "Categoria não encontrada"
+        }
+      }
     }
-    db.get livros {field_name = "isbn", field_value = $input.isbn} as $livro_existente
+    db.get livros {
+      field_name = "isbn"
+      field_value = $input.isbn
+    } as $livro_existente
     conditional {
-      if ($livro_existente != null) {throw {name: "ConflictError", value: "Já existe um livro com este ISBN"}}
+      if ($livro_existente != null) {
+        throw {
+          name = "ConflictError"
+          value = "Já existe um livro com este ISBN"
+        }
+      }
     }
     foreach ($input.autor_ids) {
       each as $autor_id {
-        db.get autores {field_name = "id", field_value = $autor_id} as $autor
+        db.get autores {
+          field_name = "id"
+          field_value = $autor_id
+        } as $autor
         conditional {
-          if ($autor == null) {throw {name: "ValidationError", value: "Autor não encontrado"}}
+          if ($autor == null) {
+            throw {
+              name = "ValidationError"
+              value = "Autor não encontrado"
+            }
+          }
         }
       }
     }

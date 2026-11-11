@@ -9,10 +9,16 @@ query "itens-emprestimos/{id}/devolucao" verb=PATCH {
   }
 
   stack {
-    db.get itens_emprestimos {field_name = "id", field_value = $input.id} as $item_existente
+    db.get itens_emprestimos {
+      field_name = "id"
+      field_value = $input.id
+    } as $item_existente
     conditional {
       if ($item_existente == null || $item_existente.situacao == "devolvido") {
-        throw {name: "ConflictError", value: "Item já devolvido ou não encontrado"}
+        throw {
+          name = "ConflictError"
+          value = "Item já devolvido ou não encontrado"
+        }
       }
     }
     db.edit itens_emprestimos {

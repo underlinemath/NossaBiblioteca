@@ -12,7 +12,12 @@ query "livros/{id}" verb=GET {
       return = {type: "single"}
     } as $livro
     conditional {
-      if ($livro == null) {throw {name: "NotFoundError", value: "Livro não encontrado"}}
+      if ($livro == null) {
+        throw {
+          name = "NotFoundError"
+          value = "Livro não encontrado"
+        }
+      }
     }
   }
 
