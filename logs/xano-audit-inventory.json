@@ -1,0 +1,644 @@
+{
+  "generatedAt": "2026-11-20T22:43:48.439Z",
+  "workspace": "151812",
+  "branch": "v1",
+  "host": "x8ki-letl-twmt.n7.xano.io",
+  "counts": {
+    "localTables": 10,
+    "remoteTables": 10,
+    "localApis": 38,
+    "remoteApis": 63
+  },
+  "onlyLocalApis": [
+    {
+      "file": "api/administracao/api_group.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/administracao/autores/GET.xs",
+      "route": "autores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/autores/POST.xs",
+      "route": "autores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/categorias_get.xs",
+      "route": "categorias",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/categorias_post.xs",
+      "route": "categorias",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/exemplares_get.xs",
+      "route": "exemplares",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/exemplares_post.xs",
+      "route": "exemplares",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/leitores_get.xs",
+      "route": "leitores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/leitores_post.xs",
+      "route": "leitores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros/autores_GET.xs",
+      "route": "livros/{id}/autores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros/autores_POST.xs",
+      "route": "livros/{id}/autores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros_post.xs",
+      "route": "livros",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/api_group.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/auth/bibliotecarios_login.xs",
+      "route": "auth/bibliotecarios/login",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/bibliotecarios_me.xs",
+      "route": "auth/bibliotecarios/me",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/leitores_login.xs",
+      "route": "auth/leitores/login",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/leitores_me.xs",
+      "route": "auth/leitores/me",
+      "verb": "GET",
+      "auth": "leitores"
+    },
+    {
+      "file": "api/auth/leitores_signup.xs",
+      "route": "auth/leitores/signup",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/catalogo/api_group.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/catalogo/livros_get.xs",
+      "route": "livros",
+      "verb": "GET",
+      "auth": null
+    },
+    {
+      "file": "api/circulacao/api_group.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/circulacao/emprestimos_get.xs",
+      "route": "emprestimos",
+      "verb": "GET",
+      "auth": "leitores"
+    },
+    {
+      "file": "api/circulacao/emprestimos_post.xs",
+      "route": "emprestimos",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/circulacao/reservas_get.xs",
+      "route": "reservas",
+      "verb": "GET",
+      "auth": "leitores"
+    },
+    {
+      "file": "api/circulacao/reservas_post.xs",
+      "route": "reservas",
+      "verb": "POST",
+      "auth": "leitores"
+    }
+  ],
+  "onlyRemoteApis": [
+    {
+      "file": "api/administracao/administracao.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/administracao/autores_GET.xs",
+      "route": "autores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/autores_POST.xs",
+      "route": "autores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/carga_dados_POST.xs",
+      "route": "carga_dados",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/administracao/categorias_GET.xs",
+      "route": "categorias",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/categorias_POST.xs",
+      "route": "categorias",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/confirmar_dados_GET.xs",
+      "route": "confirmar_dados",
+      "verb": "GET",
+      "auth": null
+    },
+    {
+      "file": "api/administracao/exemplares_GET.xs",
+      "route": "exemplares",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/exemplares_POST.xs",
+      "route": "exemplares",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/leitores_GET.xs",
+      "route": "leitores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/leitores_POST.xs",
+      "route": "leitores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros/id/autores_GET.xs",
+      "route": "livros/{id}/autores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros/id/autores_POST.xs",
+      "route": "livros/{id}/autores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros/livro_id/autores/autor_id_DELETE.xs",
+      "route": "livros/{livro_id}/autores/{autor_id}",
+      "verb": "DELETE",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros/livro_id/autores_GET.xs",
+      "route": "livros/{livro_id}/autores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros/livro_id/autores_POST.xs",
+      "route": "livros/{livro_id}/autores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros_autores/id_DELETE.xs",
+      "route": "livros_autores/{id}",
+      "verb": "DELETE",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros_autores_GET.xs",
+      "route": "livros_autores",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros_autores_POST.xs",
+      "route": "livros_autores",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/administracao/livros_POST.xs",
+      "route": "livros",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/auth/bibliotecarios/login_POST.xs",
+      "route": "auth/bibliotecarios/login",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/auth/bibliotecarios/me_GET.xs",
+      "route": "auth/bibliotecarios/me",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/auth/leitores/login_POST.xs",
+      "route": "auth/leitores/login",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/auth/leitores/me_GET.xs",
+      "route": "auth/leitores/me",
+      "verb": "GET",
+      "auth": "leitores"
+    },
+    {
+      "file": "api/auth/auth/leitores/signup_POST.xs",
+      "route": "auth/leitores/signup",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/auth/login_POST.xs",
+      "route": "auth/login",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/auth/signup_POST.xs",
+      "route": "auth/signup",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/auth.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/auth/bibliotecarios/bibliotecarios_id_DELETE.xs",
+      "route": "bibliotecarios/{bibliotecarios_id}",
+      "verb": "DELETE",
+      "auth": null
+    },
+    {
+      "file": "api/auth/bibliotecarios/bibliotecarios_id_GET.xs",
+      "route": "bibliotecarios/{bibliotecarios_id}",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/bibliotecarios/bibliotecarios_id_PATCH.xs",
+      "route": "bibliotecarios/{bibliotecarios_id}",
+      "verb": "PATCH",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/bibliotecarios/bibliotecarios_id_PUT.xs",
+      "route": "bibliotecarios/{bibliotecarios_id}",
+      "verb": "PUT",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/bibliotecarios_GET.xs",
+      "route": "bibliotecarios",
+      "verb": "GET",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/auth/bibliotecarios_POST.xs",
+      "route": "bibliotecarios",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/leitores/leitores_id_DELETE.xs",
+      "route": "leitores/{leitores_id}",
+      "verb": "DELETE",
+      "auth": null
+    },
+    {
+      "file": "api/auth/leitores/leitores_id_GET.xs",
+      "route": "leitores/{leitores_id}",
+      "verb": "GET",
+      "auth": null
+    },
+    {
+      "file": "api/auth/leitores/leitores_id_PATCH.xs",
+      "route": "leitores/{leitores_id}",
+      "verb": "PATCH",
+      "auth": null
+    },
+    {
+      "file": "api/auth/leitores/leitores_id_PUT.xs",
+      "route": "leitores/{leitores_id}",
+      "verb": "PUT",
+      "auth": null
+    },
+    {
+      "file": "api/auth/leitores_GET.xs",
+      "route": "leitores",
+      "verb": "GET",
+      "auth": null
+    },
+    {
+      "file": "api/auth/leitores_POST.xs",
+      "route": "leitores",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/login_bibliotecario_POST.xs",
+      "route": "login_bibliotecario",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/auth/login_leitor_POST.xs",
+      "route": "login_leitor",
+      "verb": "POST",
+      "auth": null
+    },
+    {
+      "file": "api/catalogo/catalogo.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/catalogo/livros/id/autores_GET.xs",
+      "route": "livros/{id}/autores",
+      "verb": "GET",
+      "auth": null
+    },
+    {
+      "file": "api/catalogo/livros_GET.xs",
+      "route": "livros",
+      "verb": "GET",
+      "auth": null
+    },
+    {
+      "file": "api/circulacao/circulacao.xs",
+      "route": null,
+      "verb": null,
+      "auth": null
+    },
+    {
+      "file": "api/circulacao/emprestimos_GET.xs",
+      "route": "emprestimos",
+      "verb": "GET",
+      "auth": "leitores"
+    },
+    {
+      "file": "api/circulacao/emprestimos_POST.xs",
+      "route": "emprestimos",
+      "verb": "POST",
+      "auth": "bibliotecarios"
+    },
+    {
+      "file": "api/circulacao/reservas_GET.xs",
+      "route": "reservas",
+      "verb": "GET",
+      "auth": "leitores"
+    },
+    {
+      "file": "api/circulacao/reservas_POST.xs",
+      "route": "reservas",
+      "verb": "POST",
+      "auth": "leitores"
+    }
+  ],
+  "tables": [
+    {
+      "name": "autores",
+      "file": "table/autores.xs",
+      "fields": [
+        "int id",
+        "text nome",
+        "text nome_autor",
+        "text livro_id",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree",
+        "btree"
+      ]
+    },
+    {
+      "name": "bibliotecarios",
+      "file": "table/bibliotecarios.xs",
+      "fields": [
+        "int id",
+        "text nome",
+        "email email",
+        "password senha",
+        "text permissoes",
+        "text status",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree"
+      ]
+    },
+    {
+      "name": "categorias",
+      "file": "table/categorias.xs",
+      "fields": [
+        "int id",
+        "text nome",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree"
+      ]
+    },
+    {
+      "name": "emprestimos",
+      "file": "table/emprestimos.xs",
+      "fields": [
+        "int id",
+        "int leitor_id",
+        "timestamp data_emprestimo",
+        "text situacao",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree"
+      ]
+    },
+    {
+      "name": "exemplares",
+      "file": "table/exemplares.xs",
+      "fields": [
+        "int id",
+        "int livro_id",
+        "text codigo",
+        "text situacao",
+        "bool disponivel",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree",
+        "btree"
+      ]
+    },
+    {
+      "name": "itens_emprestimos",
+      "file": "table/itens_emprestimos.xs",
+      "fields": [
+        "int id",
+        "int emprestimo_id",
+        "int exemplar_id",
+        "date data_prevista_devolucao",
+        "date data_efetiva_devolucao",
+        "text situacao",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree",
+        "btree"
+      ]
+    },
+    {
+      "name": "leitores",
+      "file": "table/leitores.xs",
+      "fields": [
+        "int id",
+        "text nome",
+        "email email",
+        "password senha",
+        "text telefone",
+        "text status",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree"
+      ]
+    },
+    {
+      "name": "livros",
+      "file": "table/livros.xs",
+      "fields": [
+        "int id",
+        "int categoria_id",
+        "text titulo",
+        "text autor",
+        "text isbn",
+        "text descricao",
+        "text editora",
+        "bool ativo",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree",
+        "btree"
+      ]
+    },
+    {
+      "name": "livros_autores",
+      "file": "table/livros_autores.xs",
+      "fields": [
+        "int id",
+        "int livro_id"
+      ],
+      "indexes": [
+        "primary",
+        "btree",
+        "btree",
+        "btree"
+      ]
+    },
+    {
+      "name": "reservas",
+      "file": "table/reservas.xs",
+      "fields": [
+        "int id",
+        "int leitor_id",
+        "int livro_id",
+        "int exemplar_id",
+        "date data_reserva",
+        "text modalidade",
+        "text situacao",
+        "timestamp created_at",
+        "timestamp updated_at"
+      ],
+      "indexes": [
+        "primary",
+        "btree",
+        "btree",
+        "btree"
+      ]
+    }
+  ]
+}

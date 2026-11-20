@@ -4,7 +4,7 @@ query "auth/leitores/login" verb=POST {
 
   input {
     email email
-    password senha
+    text senha
   }
 
   stack {
