@@ -10,6 +10,7 @@ query livros verb=POST {
     int[] autor_ids?
     text isbn filters=trim
     text descricao?
+    text editora?
   }
 
   stack {
@@ -60,6 +61,7 @@ query livros verb=POST {
         autor       : $input.autor
         isbn        : $input.isbn
         descricao   : $input.descricao
+        editora     : $input.editora
         ativo       : true
       }
     } as $livro

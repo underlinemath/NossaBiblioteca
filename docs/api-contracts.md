@@ -38,8 +38,8 @@ Base: `nossabiblioteca-administracao`. Requer token de bibliotecário.
 | POST | `/categorias` | `{ "nome": "string" }` | Categoria criada |
 | PATCH | `/categorias/{id}` | `{ "nome": "string" }` | Categoria atualizada |
 | DELETE | `/categorias/{id}` | — | `{ "deleted": true, "id": number }` |
-| POST | `/livros` | categoria, título, `autor` legado, `autor_ids?`, ISBN e descrição | Livro criado |
-| PATCH | `/livros/{id}` | Campos editáveis do livro e `autor_ids?` | Livro atualizado |
+| POST | `/livros` | categoria, título, `autor` legado, `autor_ids?`, ISBN, editora e descrição | Livro criado |
+| PATCH | `/livros/{id}` | Campos editáveis do livro, editora e `autor_ids?` | Livro atualizado |
 | POST | `/exemplares` | `livro_id`, `codigo`, `situacao?` | Exemplar criado |
 | PATCH | `/exemplares/{id}` | Campos editáveis do exemplar | Exemplar atualizado |
 | GET | `/leitores` | `busca?`, `page?` | Lista paginada de leitores |

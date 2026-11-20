@@ -21,6 +21,7 @@ terminal têm precedência sobre o arquivo:
 | `XANO_CIRCULATION_BASE_URL` | URL-base completa do grupo de circulação |
 | `XANO_LIBRARIAN_EMAIL` / `XANO_LIBRARIAN_PASSWORD` | Credenciais de uma conta bibliotecária no ambiente-alvo |
 | `XANO_TEST_READER_EMAIL` / `XANO_TEST_READER_PASSWORD` | Conta de leitor dedicada à integração; é criada no primeiro uso e autenticada nas reexecuções |
+| `XANO_TEST_LIBRARIAN_EMAIL` / `XANO_TEST_LIBRARIAN_PASSWORD` | Opcional: conta bibliotecária dedicada à integração; quando ausentes, o script usa `seed-<prefix>@nossabiblioteca.test` |
 | `XANO_TEST_PREFIX` | Identificador exclusivo do conjunto, de 3 a 24 caracteres alfanuméricos, `_` ou `-` |
 | `XANO_REPORT_PATH` | Opcional: caminho relativo ao projeto para acrescentar um relatório JSON sem segredos |
 

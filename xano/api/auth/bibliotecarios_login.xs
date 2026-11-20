@@ -14,7 +14,7 @@ query "auth/bibliotecarios/login" verb=POST {
     } as $bibliotecario
 
     conditional {
-      if ($bibliotecario == null || $bibliotecario.status != "ativo") {
+      if ($bibliotecario == null || ($bibliotecario.status != "ativo" && $bibliotecario.status != "Ativo")) {
         throw {
           name = "AccessDeniedError"
           value = "E-mail ou senha inválidos"

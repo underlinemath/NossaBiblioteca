@@ -7,6 +7,7 @@ query leitores verb=POST {
     text nome filters=trim
     email email
     text telefone?
+    password senha
     text status?=ativo
   }
 
@@ -16,6 +17,7 @@ query leitores verb=POST {
         nome    : $input.nome
         email   : $input.email
         telefone: $input.telefone
+        senha   : $input.senha
         status  : $input.status
       }
     } as $leitor

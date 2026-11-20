@@ -10,6 +10,7 @@ query "livros/{id}" verb=PATCH {
     text autor filters=trim
     text isbn filters=trim
     text descricao?
+    text editora?
     bool ativo
   }
 
@@ -35,6 +36,7 @@ query "livros/{id}" verb=PATCH {
         autor       : $input.autor
         isbn        : $input.isbn
         descricao   : $input.descricao
+        editora     : $input.editora
         ativo       : $input.ativo
         updated_at  : now
       }

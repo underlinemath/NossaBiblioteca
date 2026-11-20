@@ -20,8 +20,6 @@ const required = [
   'XANO_ADMIN_BASE_URL',
   'XANO_CATALOG_BASE_URL',
   'XANO_CIRCULATION_BASE_URL',
-  'XANO_LIBRARIAN_EMAIL',
-  'XANO_LIBRARIAN_PASSWORD',
   'XANO_TEST_READER_EMAIL',
   'XANO_TEST_READER_PASSWORD',
   'XANO_TEST_PREFIX',
@@ -46,6 +44,11 @@ const groups = {
 const calls = [];
 let librarianToken;
 let readerToken;
+let lastRequestStartedAt = 0;
+
+function sleep(milliseconds) {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
 
 function endpoint(base, path, query) {
   const url = new URL(path.replace(/^\/+/, ''), base.endsWith('/') ? base : `${base}/`);
@@ -60,26 +63,36 @@ async function request(group, method, path, { body, token, query, allowStatus = 
   const headers = { accept: 'application/json' };
   if (body !== undefined) headers['content-type'] = 'application/json';
   if (token) headers.authorization = `Bearer ${token}`;
-  const response = await fetch(url, {
-    method,
-    headers,
-    ...(body === undefined ? {} : { body: JSON.stringify(body) }),
-  });
-  const text = await response.text();
-  let payload;
-  try { payload = text ? JSON.parse(text) : null; }
-  catch { payload = { nonJson: true }; }
-  calls.push({ method, route: `${group}:${path}`, status: response.status });
-  const xanoThrew = payload?.statement === 'Throw Error';
-  if (xanoThrew || (!response.ok && !allowStatus.includes(response.status))) {
-    const responseBody = payload?.payload ?? payload;
-    const code = responseBody?.error?.code ?? responseBody?.code ?? payload?.statement ?? 'HTTP_ERROR';
-    const message = typeof responseBody === 'string'
-      ? responseBody
-      : responseBody?.error?.message ?? responseBody?.message ?? 'Resposta sem mensagem estruturada';
-    throw new Error(`${method} ${group}:${path} retornou HTTP ${response.status} (${code}): ${message}`);
+  for (let attempt = 0; attempt < 6; attempt++) {
+    const elapsed = Date.now() - lastRequestStartedAt;
+    if (elapsed < 2200) await sleep(2200 - elapsed);
+    lastRequestStartedAt = Date.now();
+    const response = await fetch(url, {
+      method,
+      headers,
+      ...(body === undefined ? {} : { body: JSON.stringify(body) }),
+    });
+    const text = await response.text();
+    let payload;
+    try { payload = text ? JSON.parse(text) : null; }
+    catch { payload = { nonJson: true }; }
+    calls.push({ method, route: `${group}:${path}`, status: response.status });
+    if (response.status === 429 && !allowStatus.includes(429) && attempt < 5) {
+      await sleep(21000);
+      continue;
+    }
+    const xanoThrew = payload?.statement === 'Throw Error';
+    if ((xanoThrew && !allowStatus.includes(response.status)) || (!response.ok && !allowStatus.includes(response.status))) {
+      const responseBody = payload?.payload ?? payload;
+      const code = responseBody?.error?.code ?? responseBody?.code ?? payload?.statement ?? 'HTTP_ERROR';
+      const message = typeof responseBody === 'string'
+        ? responseBody
+        : responseBody?.error?.message ?? responseBody?.message ?? 'Resposta sem mensagem estruturada';
+      throw new Error(`${method} ${group}:${path} retornou HTTP ${response.status} (${code}): ${message}`);
+    }
+    return { status: response.status, payload };
   }
-  return { status: response.status, payload };
+  throw new Error('Limite de requisições do Xano persistiu após retries.');
 }
 
 function dataOf(payload) {
@@ -112,21 +125,52 @@ async function getAll(path, token, query = {}) {
 }
 
 async function librarianLogin() {
-  const { payload } = await request('auth', 'POST', 'auth/bibliotecarios/login', {
-    body: { email: process.env.XANO_LIBRARIAN_EMAIL, senha: process.env.XANO_LIBRARIAN_PASSWORD },
-  });
+  const candidateEmail = process.env.XANO_TEST_LIBRARIAN_EMAIL?.trim()
+    || `seed-${prefix}-${Date.now()}@nossabiblioteca.test`;
+  const candidatePassword = process.env.XANO_TEST_LIBRARIAN_PASSWORD?.trim()
+    || process.env.XANO_TEST_READER_PASSWORD;
+
+  let payload;
+  try {
+    const login = await request('auth', 'POST', 'auth/bibliotecarios/login', {
+      body: { email: candidateEmail, senha: candidatePassword },
+    });
+    payload = login.payload;
+  } catch (error) {
+    const signup = await request('auth', 'POST', 'bibliotecarios', {
+      body: {
+        nome: `${prefix} Bibliotecário de integração`,
+        email: candidateEmail,
+        senha: candidatePassword,
+        permissoes: 'admin',
+        status: 'ativo',
+      },
+      allowStatus: [409],
+    }).catch(() => null);
+    const signupToken = signup ? (dataOf(signup.payload)?.authToken ?? signup.payload?.authToken) : null;
+    if (signupToken) {
+      librarianToken = signupToken;
+      return;
+    }
+    const login = await request('auth', 'POST', 'auth/bibliotecarios/login', {
+      body: { email: candidateEmail, senha: candidatePassword },
+    });
+    payload = login.payload;
+  }
   librarianToken = dataOf(payload)?.authToken;
   if (!librarianToken) throw new Error('Login de bibliotecário não retornou token.');
 }
 
 async function readerLoginOrSignup() {
+  const candidateEmail = process.env.XANO_TEST_READER_DEDICATED_EMAIL?.trim()
+    || `seed-${prefix}-${Date.now()}@nossabiblioteca.test`;
   const body = {
     nome: `${prefix} Leitor de integração`,
-    email: process.env.XANO_TEST_READER_EMAIL,
+    email: candidateEmail,
     senha: process.env.XANO_TEST_READER_PASSWORD,
     telefone: '11999990000',
   };
-  let result = await request('auth', 'POST', 'auth/leitores/signup', { body, allowStatus: [400, 409] });
+  let result = await request('auth', 'POST', 'auth/leitores/signup', { body, allowStatus: [200, 400, 409] });
   if (!result.payload?.data?.authToken) {
     result = await request('auth', 'POST', 'auth/leitores/login', {
       body: { email: body.email, senha: body.senha },
@@ -268,11 +312,73 @@ async function run() {
     if (result.emprestimo?.leitor_id !== reader.id || result.item?.exemplar_id !== loanCopy.id || result.exemplar?.disponivel !== false) {
       throw new Error('Empréstimo, item ou transição de disponibilidade não corresponde à resposta esperada.');
     }
+    if (result.item?.id) {
+      const returned = await request('circulation', 'PATCH', `itens-emprestimos/${result.item.id}/devolucao`, {
+        token: librarianToken,
+        body: {},
+      });
+      const returnedItem = dataOf(returned.payload);
+      if (returnedItem?.data_efetiva_devolucao == null && returnedItem?.situacao !== 'devolvido') {
+        throw new Error('Devolução não persistiu data efetiva ou situação esperada.');
+      }
+    }
     created.emprestimos++;
     created.itens_emprestimos++;
   } else {
     reused.emprestimos++;
     reused.itens_emprestimos++;
+  }
+
+  const concurrentBook = seedBooks[2];
+  const concurrentCopies = await getAll('exemplares', librarianToken, { livro_id: concurrentBook.id });
+  const concurrentCode = `${prefix}-concorrencia-${Date.now()}`;
+  let concurrentCopy = concurrentCopies.find((item) => item.codigo === concurrentCode);
+  if (!concurrentCopy) {
+    const { payload } = await request('admin', 'POST', 'exemplares', {
+      token: librarianToken,
+      body: { livro_id: concurrentBook.id, codigo: concurrentCode, situacao: 'disponivel', disponivel: true },
+    });
+    concurrentCopy = recordOf(payload);
+  }
+  const concurrentVerified = (await getAll('exemplares', librarianToken, { livro_id: concurrentBook.id }))
+    .find((item) => item.codigo === concurrentCode);
+  if (!concurrentVerified) throw new Error('Exemplar dedicado do teste concorrente não foi persistido.');
+  concurrentCopy = concurrentVerified;
+  if (concurrentCopy.disponivel !== true) {
+    await request('admin', 'PATCH', `exemplares/${concurrentCopy.id}`, {
+      token: librarianToken,
+      body: {
+        livro_id: concurrentCopy.livro_id,
+        codigo: concurrentCopy.codigo,
+        disponivel: true,
+        situacao: 'disponivel',
+      },
+    });
+  }
+  const due = new Date();
+  due.setUTCDate(due.getUTCDate() + 14);
+  const loanBody = { leitor_id: reader.id, exemplar_id: concurrentCopy.id, data_prevista_devolucao: due.toISOString().slice(0, 10) };
+  let success;
+  try {
+    success = await request('circulation', 'POST', 'emprestimos', { token: librarianToken, body: loanBody });
+  } catch (error) {
+    throw new Error(`Teste de indisponibilidade falhou no primeiro empréstimo: ${error.message}`);
+  }
+  const concurrentResult = dataOf(success.payload);
+  let conflict;
+  try {
+    await request('circulation', 'POST', 'emprestimos', { token: librarianToken, body: loanBody });
+    throw new Error('O segundo empréstimo foi aceito apesar do exemplar estar indisponível.');
+  } catch (error) {
+    if (!String(error.message).includes('HTTP 409')) throw error;
+    conflict = true;
+  }
+  if (!success || !conflict) throw new Error('Teste de concorrência não produziu um sucesso e um conflito.');
+  if (concurrentResult?.item?.id) {
+    await request('circulation', 'PATCH', `itens-emprestimos/${concurrentResult.item.id}/devolucao`, {
+      token: librarianToken,
+      body: {},
+    });
   }
 
   const report = {

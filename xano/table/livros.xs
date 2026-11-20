@@ -8,6 +8,7 @@ table livros {
     text autor filters=trim
     text isbn filters=trim
     text descricao
+    text editora? filters=trim
     bool ativo?=true
     timestamp created_at?=now
     timestamp updated_at?=now
