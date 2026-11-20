@@ -1,0 +1,28 @@
+{
+	"servers": {
+		"xano": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@xano/developer-mcp"
+			],
+			"type": "stdio"
+		},
+		"enter": {
+			"type": "stdio",
+			"command": "enter",
+			"args": []
+		},
+		"my-mcp-server-2e5383e6": {
+			"type": "stdio",
+			"command": "enter",
+			"args": []
+		},
+		"my-mcp-server-2270acd8": {
+			"type": "stdio",
+			"command": "Enter",
+			"args": []
+		}
+	},
+	"inputs": []
+}

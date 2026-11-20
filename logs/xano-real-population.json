@@ -1,0 +1,10205 @@
+{
+  "generatedAt": "2026-11-20T22:00:52.218Z",
+  "counts": {
+    "booksCreated": 93,
+    "booksReused": 27,
+    "copiesCreated": 187,
+    "associationsCreated": 0,
+    "readersCreated": 100,
+    "readersReused": 0,
+    "librariansCreated": 10,
+    "librariansReused": 0
+  },
+  "requests": [
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/10/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/11/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/12/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/13/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/14/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/15/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/16/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/17/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/18/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/19/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/20/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/21/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/22/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/23/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/24/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/25/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/26/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/38/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/28/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/29/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/30/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/31/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/32/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/33/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/34/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/35/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/36/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/37/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/39/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/40/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/41/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/42/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/43/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/44/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/45/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/46/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/47/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/48/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/49/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/50/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/51/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/52/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/53/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/54/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/55/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/56/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/57/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/58/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/58/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/59/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/60/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/60/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/61/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/62/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/63/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/64/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/65/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/66/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/67/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/68/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/69/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/70/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/71/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/72/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/73/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/74/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/75/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/76/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/77/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/78/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/79/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/80/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/81/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/82/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/83/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/84/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/84/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/85/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/86/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/86/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/87/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/88/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/89/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/90/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/91/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/92/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/93/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/94/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/95/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/95/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/96/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/97/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/97/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/98/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/99/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/100/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/101/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/102/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/103/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/104/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/105/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/106/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/107/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/108/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/109/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/110/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/111/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/112/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/113/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/114/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/115/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/116/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/117/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/117/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/118/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/119/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/120/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/120/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/121/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/122/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/123/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/124/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/125/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/125/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/126/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/127/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/128/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/129/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/130/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 429
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    }
+  ]
+}
+{
+  "generatedAt": "2026-11-20T22:14:46.667Z",
+  "counts": {
+    "booksCreated": 0,
+    "booksReused": 120,
+    "copiesCreated": 0,
+    "associationsCreated": 0,
+    "readersCreated": 0,
+    "readersReused": 0,
+    "librariansCreated": 0,
+    "librariansReused": 0
+  },
+  "requests": [
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "categorias",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/10/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/11/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/12/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/13/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/14/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/14/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/15/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/16/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/17/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/18/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/19/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/20/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/20/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/21/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/22/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/22/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/23/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/24/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/25/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/26/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/38/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/38/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/28/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/29/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/30/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/31/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/32/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/32/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/33/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/34/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/34/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/35/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/35/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/36/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/37/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/37/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/39/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/40/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/40/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/41/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/42/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/43/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/44/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/45/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/45/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/46/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/47/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/48/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/49/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/50/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/50/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/51/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/52/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/53/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/54/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/55/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/56/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/56/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/57/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/58/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/58/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/59/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/59/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/60/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/61/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/62/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/63/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/64/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/64/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/65/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/66/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/67/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/68/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/69/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/69/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/70/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/71/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/72/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/73/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/74/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/74/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/75/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/76/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/77/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/78/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/79/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/79/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/80/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/81/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/82/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/83/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/84/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/84/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/85/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/86/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/87/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/88/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/89/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/90/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/91/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/91/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/92/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/93/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/94/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/95/autores",
+      "status": 429
+    },
+    {
+      "method": "GET",
+      "route": "livros/95/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/96/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/97/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/98/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/99/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/100/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/101/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/102/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/103/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/104/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/105/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/106/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/107/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/108/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/109/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/110/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/111/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/112/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/113/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/114/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/115/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/116/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/117/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/118/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/119/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/120/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/121/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/122/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/123/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/124/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/125/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/126/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/127/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/128/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/129/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "livros/130/autores",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "route": "exemplares",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/leitores/signup",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "auth/bibliotecarios/login",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "route": "bibliotecarios",
+      "status": 200
+    }
+  ]
+}
