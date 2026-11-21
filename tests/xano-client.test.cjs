@@ -88,3 +88,31 @@ test('converte falha de rede em erro legível', async () => {
   const { client } = clientWith(async () => { throw new TypeError('offline'); });
   await assert.rejects(client.catalog(), error => error.code === 'NETWORK_ERROR');
 });
+
+test('executa PATCH e DELETE administrativos com bearer token', async () => {
+  const calls = [];
+  const { client } = clientWith(async (url, options) => {
+    calls.push({ url: new URL(url), options });
+    const route = String(url);
+    if (route.includes('/auth/bibliotecarios/login')) {
+      return response(200, { data: { authToken: 'session-token', user: { id: 1 } }, error: null });
+    }
+    if (route.includes('/livros/12') && options.method === 'PATCH') {
+      return response(200, { data: { id: 12, titulo: 'Atualizado' }, error: null });
+    }
+    return response(200, { data: { deleted: true, id: 12 }, error: null });
+  });
+  await client.login('lib@example.test', 'secret');
+  await client.updateBook(12, { titulo: 'Atualizado' });
+  await client.deleteBook(12);
+  assert.equal(calls[1].options.method, 'PATCH');
+  assert.equal(calls[1].options.headers.authorization, 'Bearer session-token');
+  assert.equal(calls[2].options.method, 'DELETE');
+  assert.equal(calls[2].options.headers.authorization, 'Bearer session-token');
+});
+
+test('frontend não usa localStorage como fonte de dados', () => {
+  const appSource = fs.readFileSync(path.join(__dirname, '..', 'app.js'), 'utf8');
+  assert.equal(/localStorage/.test(appSource), false);
+  assert.equal(/biblioteca_demo_v1/.test(appSource), false);
+});

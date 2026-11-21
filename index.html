@@ -19,17 +19,20 @@
     <nav id="navigation">
       <button class="nav-link active" data-page="dashboard">▦ <span>Painel inicial</span></button>
       <button class="nav-link" data-page="books">▤ <span>Livros</span></button>
+      <button class="nav-link" data-page="authors">✎ <span>Autores</span></button>
+      <button class="nav-link" data-page="categories">◇ <span>Categorias</span></button>
+      <button class="nav-link" data-page="copies">▥ <span>Exemplares</span></button>
       <button class="nav-link" data-page="readers">♙ <span>Leitores</span></button>
       <button class="nav-link" data-page="loans">⇄ <span>Empréstimos</span></button>
     </nav>
 
     <div class="sidebar-bottom">
-      <span class="status-dot"></span> Protótipo local
-      <small>Dados salvos neste navegador</small>
+      <span class="status-dot"></span> <span id="sessionStatus">Xano não autenticado</span>
+      <small>Dados persistidos no Xano</small>
     </div>
   </aside>
 
-  <main class="main">
+  <main class="main" id="appMain" hidden>
     <header class="topbar">
       <div>
         <p class="eyebrow">SISTEMA DE BIBLIOTECA</p>
@@ -41,9 +44,26 @@
     <section id="pageContent"></section>
 
     <footer>
-      Protótipo acadêmico · XanoScript/Xano ainda precisa ser conectado para uso compartilhado.
+      NossaBiblioteca · Dados conectados ao Xano · <button type="button" class="footer-link" id="logoutButton">Encerrar sessão</button>
     </footer>
   </main>
+
+  <section class="login-screen" id="loginScreen">
+    <form class="login-card" id="loginForm">
+      <span class="brand-icon">B</span>
+      <p class="eyebrow">ÁREA ADMINISTRATIVA</p>
+      <h1>Entrar na Biblioteca</h1>
+      <p>Use uma conta de bibliotecário cadastrada no Xano.</p>
+      <label>E-mail
+        <input type="email" name="email" autocomplete="username" required>
+      </label>
+      <label>Senha
+        <input type="password" name="senha" autocomplete="current-password" required>
+      </label>
+      <p id="loginError" class="error" role="alert"></p>
+      <button class="primary" type="submit">Entrar</button>
+    </form>
+  </section>
 
   <dialog id="modal">
     <form id="modalForm" method="dialog">
@@ -67,6 +87,8 @@
 
   <div id="toast" class="toast" role="status"></div>
 
+  <script src="xano-config.js"></script>
+  <script src="xano-client.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

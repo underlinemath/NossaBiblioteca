@@ -3,8 +3,8 @@
 ## 1. Contratos e configuração segura
 
 - [x] 1.1 Confirmar URLs públicas dos grupos e contratos ativos no workspace Xano, registrar configuração pública sem segredos e validar requisições preflight/CORS em ambiente de teste.
-- [ ] 1.2 Implementar consulta administrativa paginada de empréstimos com itens, exemplares e leitores; validar resposta com token de bibliotecário e rejeição de token ausente/de leitor.
-- [ ] 1.3 Documentar respostas, paginação, campos suportados e erros das rotas usadas pela interface; verificar exemplos contra os arquivos versionados em `xano/api/`.
+- [x] 1.2 Implementar consulta administrativa paginada de empréstimos com itens, exemplares e leitores; validar resposta com token de bibliotecário e rejeição de token ausente/de leitor.
+- [x] 1.3 Documentar respostas, paginação, campos suportados e erros das rotas usadas pela interface; verificar exemplos contra os arquivos versionados em `xano/api/`.
 
 ## 2. Cliente e sessão Xano
 

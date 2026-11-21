@@ -43,7 +43,8 @@ Base: `nossabiblioteca-administracao`. Requer token de bibliotecário.
 | POST | `/exemplares` | `livro_id`, `codigo`, `situacao?` | Exemplar criado |
 | PATCH | `/exemplares/{id}` | Campos editáveis do exemplar | Exemplar atualizado |
 | GET | `/leitores` | `busca?`, `page?` | Lista paginada de leitores |
-| POST | `/leitores` | nome, e-mail, telefone e status | Leitor criado |
+| GET | `/emprestimos` | `page?` | Coleções relacionadas de empréstimos, itens, leitores e exemplares |
+| POST | `/leitores` | nome, e-mail, telefone opcional, **senha** e status opcional | Leitor criado |
 | PATCH | `/leitores/{id}` | Dados do leitor | Leitor atualizado |
 | DELETE | `/leitores/{id}` | — | Leitor inativado |
 | GET | `/autores` | `busca?`, `page?` | Lista paginada de autores |
@@ -80,3 +81,15 @@ O endpoint `POST /livros` aceita `autor_ids` opcional e grava cada vínculo em
 `livros_autores`. `POST /exemplares` recebe `codigo` (não ISBN); o valor é
 persistido em `exemplares.codigo`. A massa repetível de demonstração e sua
 política de limpeza estão em [xano-seed.md](./xano-seed.md).
+
+## Paginação e erros no frontend
+
+As consultas paginadas são consumidas com o envelope Xano `{ "data": ...,
+"error": null }`. A interface aceita respostas como lista direta ou objetos de
+paginação Xano (`itemsCurrentPage`/`items`, página atual e totais), com busca
+quando o contrato inclui os parâmetros `busca` ou `livro_id`.
+
+Falhas HTTP são convertidas pelo cliente em `XanoError` com `status` e `code`.
+O frontend apresenta mensagens específicas para 400, 401, 403, 404, 409,
+timeout e erro de rede. Uma resposta 401 limpa o token em `sessionStorage` e
+encerra a sessão. Nenhuma mutação altera a tela antes da confirmação HTTP.

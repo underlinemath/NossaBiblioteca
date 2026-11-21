@@ -140,3 +140,74 @@
     }
   ]
 }
+{
+  "generatedAt": "2026-11-21T22:10:16.289Z",
+  "prefix": "TEST98968155",
+  "results": [
+    {
+      "name": "Autenticação rejeita credencial inválida",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cadastro de bibliotecário retorna token",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cadastro de leitor retorna token",
+      "passed": true,
+      "detail": "authToken ausente"
+    },
+    {
+      "name": "Mutação administrativa sem token é bloqueada",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cadastro de categoria persiste",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cadastro de autor persiste",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cadastro de livro persiste categoria e associação",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Cadastro de exemplar persiste vínculo",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Consulta pública retorna livro criado",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Reserva persiste para leitor autenticado",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Empréstimo atualiza estado do exemplar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Segundo empréstimo do mesmo exemplar é rejeitado",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Devolução atualiza item e exemplar",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

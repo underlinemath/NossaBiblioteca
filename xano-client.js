@@ -63,6 +63,9 @@
     if (payload?.statement === 'Throw Error' || !response.ok) {
       const error = normalizeError(payload, response, url.pathname);
       if (response.status === 401 && auth) clearToken();
+      if (response.status === 401) {
+        window.dispatchEvent?.(new Event('xano:unauthorized'));
+      }
       throw error;
     }
     if (payload?.error) {
@@ -87,6 +90,7 @@
     XanoError,
     get hasSession() { return Boolean(token); },
     clearToken,
+    logout: () => { clearToken(); },
     login: async (email, password) => {
       const result = await request('auth', '/auth/bibliotecarios/login', {
         method: 'POST', body: { email, senha: password }
@@ -108,6 +112,16 @@
     createBook: body => request('admin', '/livros', { method: 'POST', body, auth: true }),
     createCopy: body => request('admin', '/exemplares', { method: 'POST', body, auth: true }),
     createReader: body => request('admin', '/leitores', { method: 'POST', body, auth: true }),
+    updateCategory: (id, body) => request('admin', `/categorias/${encodeURIComponent(id)}`, { method: 'PATCH', body, auth: true }),
+    deleteCategory: id => request('admin', `/categorias/${encodeURIComponent(id)}`, { method: 'DELETE', auth: true }),
+    updateAuthor: (id, body) => request('admin', `/autores/${encodeURIComponent(id)}`, { method: 'PATCH', body, auth: true }),
+    deleteAuthor: id => request('admin', `/autores/${encodeURIComponent(id)}`, { method: 'DELETE', auth: true }),
+    updateBook: (id, body) => request('admin', `/livros/${encodeURIComponent(id)}`, { method: 'PATCH', body, auth: true }),
+    deleteBook: id => request('admin', `/livros/${encodeURIComponent(id)}`, { method: 'DELETE', auth: true }),
+    updateCopy: (id, body) => request('admin', `/exemplares/${encodeURIComponent(id)}`, { method: 'PATCH', body, auth: true }),
+    deleteCopy: id => request('admin', `/exemplares/${encodeURIComponent(id)}`, { method: 'DELETE', auth: true }),
+    updateReader: (id, body) => request('admin', `/leitores/${encodeURIComponent(id)}`, { method: 'PATCH', body, auth: true }),
+    deleteReader: id => request('admin', `/leitores/${encodeURIComponent(id)}`, { method: 'DELETE', auth: true }),
     createLoan: body => request('circulation', '/emprestimos', { method: 'POST', body, auth: true }),
     returnItem: (id, body = {}) => request('circulation', `/itens-emprestimos/${encodeURIComponent(id)}/devolucao`, { method: 'PATCH', body, auth: true })
   });
