@@ -1,0 +1,94 @@
+    <!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca • Gestão do acervo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-icon">B</span>
+      <div>
+        <strong>Biblioteca</strong>
+        <small>Gestão do acervo</small>
+      </div>
+    </div>
+
+    <nav id="navigation">
+      <button class="nav-link active" data-page="dashboard">▦ <span>Painel inicial</span></button>
+      <button class="nav-link" data-page="books">▤ <span>Livros</span></button>
+      <button class="nav-link" data-page="authors">✎ <span>Autores</span></button>
+      <button class="nav-link" data-page="categories">◇ <span>Categorias</span></button>
+      <button class="nav-link" data-page="copies">▥ <span>Exemplares</span></button>
+      <button class="nav-link" data-page="readers">♙ <span>Leitores</span></button>
+      <button class="nav-link" data-page="loans">⇄ <span>Empréstimos</span></button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <span class="status-dot"></span> <span id="sessionStatus">Xano não autenticado</span>
+      <small>Dados persistidos no Xano</small>
+    </div>
+  </aside>
+
+  <main class="main" id="appMain" hidden>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">SISTEMA DE BIBLIOTECA</p>
+        <h1 id="pageTitle">Painel inicial</h1>
+      </div>
+      <button class="primary" id="quickAdd">＋ Novo cadastro</button>
+    </header>
+
+    <section id="pageContent"></section>
+
+    <footer>
+      NossaBiblioteca · Dados conectados ao Xano · <button type="button" class="footer-link" id="logoutButton">Encerrar sessão</button>
+    </footer>
+  </main>
+
+  <section class="login-screen" id="loginScreen">
+    <form class="login-card" id="loginForm">
+      <span class="brand-icon">B</span>
+      <p class="eyebrow">ÁREA ADMINISTRATIVA</p>
+      <h1>Entrar na Biblioteca</h1>
+      <p>Use uma conta de bibliotecário cadastrada no Xano.</p>
+      <label>E-mail
+        <input type="email" name="email" autocomplete="username" required>
+      </label>
+      <label>Senha
+        <input type="password" name="senha" autocomplete="current-password" required>
+      </label>
+      <p id="loginError" class="error" role="alert"></p>
+      <button class="primary" type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <dialog id="modal">
+    <form id="modalForm" method="dialog">
+      <div class="modal-head">
+        <div>
+          <p class="eyebrow">CADASTRO</p>
+          <h2 id="modalTitle">Novo registro</h2>
+        </div>
+        <button type="button" class="icon-button" id="closeModal" aria-label="Fechar">×</button>
+      </div>
+
+      <div id="modalFields" class="form-grid"></div>
+      <p id="formError" class="error" role="alert"></p>
+
+      <div class="modal-actions">
+        <button type="button" class="secondary" id="cancelModal">Cancelar</button>
+        <button class="primary" type="submit">Salvar registro</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="xano-config.js"></script>
+  <script src="xano-client.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
