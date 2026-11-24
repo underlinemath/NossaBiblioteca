@@ -1,30 +1,47 @@
-import streamlit as st
+import base64
 from datetime import date, timedelta
+from pathlib import Path
+
+import streamlit as st
+
 
 st.set_page_config(
     page_title="NossaBiblioteca",
     page_icon="📚",
-    layout="wide"
+    layout="wide",
 )
 
-from pathlib import Path
 
-if "tema_biblioteca" not in st.session_state:
-    st.session_state.tema_biblioteca = "Claro"
+ROOT = Path(__file__).resolve().parent
+CSS_PATH = ROOT / "assets" / "interface.css"
+BACKGROUND_PATH = ROOT / "assets" / "biblioteca-fundo.png"
 
-tema = st.sidebar.selectbox(
-    "Tema visual",
-    ["Claro", "Escuro"],
-    key="tema_biblioteca"
-)
+PAGES = [
+    "Painel inicial",
+    "Livros",
+    "Categorias",
+    "Leitores",
+    "Exemplares",
+    "Empréstimos",
+    "Devoluções",
+    "Reservas",
+]
 
-def aplicar_estilo_biblioteca(tema):
-    caminho_css = Path("assets/interface.css")
 
-    css = caminho_css.read_text(encoding="utf-8")
+def image_data_uri(path):
+    if not path.exists():
+        return ""
+    encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+    return f"url('data:image/png;base64,{encoded}')"
 
-    if tema == "Claro":
-        cores = {
+
+def apply_theme(theme):
+    css = CSS_PATH.read_text(encoding="utf-8")
+    background = image_data_uri(BACKGROUND_PATH)
+
+    if theme == "Claro":
+        colors = {
+            "LIBRARY_BG": background,
             "PAGE_OVERLAY": "rgba(245, 239, 222, 0.72)",
             "GLASS_BG": "rgba(255, 250, 238, 0.82)",
             "GLASS_STRONG": "rgba(255, 250, 238, 0.94)",
@@ -35,7 +52,8 @@ def aplicar_estilo_biblioteca(tema):
             "SHADOW_COLOR": "rgba(35, 45, 30, 0.12)",
         }
     else:
-        cores = {
+        colors = {
+            "LIBRARY_BG": background,
             "PAGE_OVERLAY": "rgba(10, 19, 13, 0.78)",
             "GLASS_BG": "rgba(20, 31, 24, 0.84)",
             "GLASS_STRONG": "rgba(20, 31, 24, 0.95)",
@@ -46,62 +64,64 @@ def aplicar_estilo_biblioteca(tema):
             "SHADOW_COLOR": "rgba(0, 0, 0, 0.30)",
         }
 
-    for nome, valor in cores.items():
-        css = css.replace("{{" + nome + "}}", valor)
-
-
+    for name, value in colors.items():
+        css = css.replace("{{" + name + "}}", value)
     st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
-aplicar_estilo_biblioteca(tema)
 
-if "livros" not in st.session_state:
-    st.session_state.livros = [
-        {"id": 1, "titulo": "Dom Casmurro", "autor": "Machado de Assis", "categoria": "Romance", "isbn": "978000000001"},
-        {"id": 2, "titulo": "O Pequeno Príncipe", "autor": "Antoine de Saint-Exupéry", "categoria": "Literatura", "isbn": "978000000002"},
-        {"id": 3, "titulo": "1984", "autor": "George Orwell", "categoria": "Ficção", "isbn": "978000000003"},
-    ]
+def initialize_state():
+    defaults = {
+        "livros": [
+            {"id": 1, "titulo": "Dom Casmurro", "autor": "Machado de Assis", "categoria": "Romance", "isbn": "978000000001", "descricao": ""},
+            {"id": 2, "titulo": "O Pequeno Príncipe", "autor": "Antoine de Saint-Exupéry", "categoria": "Literatura", "isbn": "978000000002", "descricao": ""},
+            {"id": 3, "titulo": "1984", "autor": "George Orwell", "categoria": "Ficção", "isbn": "978000000003", "descricao": ""},
+        ],
+        "leitores": [
+            {"id": 1, "nome": "Ana Silva", "email": "ana@email.com", "telefone": "(11) 99999-0001"},
+            {"id": 2, "nome": "Pedro Santos", "email": "pedro@email.com", "telefone": "(11) 99999-0002"},
+        ],
+        "categorias": ["Romance", "Literatura", "Ficção", "Tecnologia"],
+        "exemplares": [
+            {"codigo": "EX001", "livro_id": 1, "situacao": "Disponível"},
+            {"codigo": "EX002", "livro_id": 2, "situacao": "Disponível"},
+            {"codigo": "EX003", "livro_id": 3, "situacao": "Disponível"},
+        ],
+        "emprestimos": [],
+        "reservas": [],
+        "tema_biblioteca": "Claro",
+    }
+    for key, value in defaults.items():
+        if key not in st.session_state:
+            st.session_state[key] = value
 
-if "leitores" not in st.session_state:
-    st.session_state.leitores = [
-        {"id": 1, "nome": "Ana Silva", "email": "ana@email.com", "telefone": "(11) 99999-0001"},
-        {"id": 2, "nome": "Pedro Santos", "email": "pedro@email.com", "telefone": "(11) 99999-0002"},
-    ]
 
-if "categorias" not in st.session_state:
-    st.session_state.categorias = ["Romance", "Literatura", "Ficção", "Tecnologia"]
+initialize_state()
 
-if "exemplares" not in st.session_state:
-    st.session_state.exemplares = [
-        {"codigo": "EX001", "livro_id": 1, "situacao": "Disponível"},
-        {"codigo": "EX002", "livro_id": 2, "situacao": "Disponível"},
-        {"codigo": "EX003", "livro_id": 3, "situacao": "Disponível"},
-    ]
-
-if "emprestimos" not in st.session_state:
-    st.session_state.emprestimos = []
-
-if "reservas" not in st.session_state:
-    st.session_state.reservas = []
-
-st.sidebar.title("📚 NossaBiblioteca")
-st.sidebar.caption("Sistema de gerenciamento")
-pagina = st.sidebar.radio(
-    "Navegação",
-    [
-        "Painel inicial",
-        "Livros",
-        "Categorias",
-        "Leitores",
-        "Exemplares",
-        "Empréstimos",
-        "Devoluções",
-        "Reservas",
-    ]
+st.sidebar.markdown(
+    """
+    <div class="nb-brand">
+        <span>📚</span>
+        <div>
+            <strong>NossaBiblioteca</strong>
+            <small>Sistema de gerenciamento</small>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
 )
 
-st.title("📚 NossaBiblioteca")
-st.caption("Sistema de gerenciamento de biblioteca")
-st.divider()
+theme = st.sidebar.selectbox(
+    "Tema visual",
+    ["Claro", "Escuro"],
+    key="tema_biblioteca",
+)
+apply_theme(theme)
+
+page = st.sidebar.radio(
+    "Navegação",
+    PAGES,
+    key="pagina_atual",
+)
 
 livros = st.session_state.livros
 leitores = st.session_state.leitores
@@ -109,345 +129,306 @@ emprestimos = st.session_state.emprestimos
 reservas = st.session_state.reservas
 exemplares = st.session_state.exemplares
 
-def nome_livro(livro_id):
-    for livro in livros:
-        if livro["id"] == livro_id:
-            return livro["titulo"]
-    return "Livro não encontrado"
 
-if pagina == "Painel inicial":
-    st.subheader("Painel inicial")
+def book_name(book_id):
+    return next((book["titulo"] for book in livros if book["id"] == book_id), "Livro não encontrado")
+
+
+def reader_name(reader_id):
+    return next((reader["nome"] for reader in leitores if reader["id"] == reader_id), "Leitor não encontrado")
+
+
+def page_header(title, description):
+    st.markdown(
+        f'<div class="nb-page-eyebrow">NOSSABIBLIOTECA · {title.upper()}</div>',
+        unsafe_allow_html=True,
+    )
+    st.title(title)
+    st.caption(description)
+
+
+def empty_message(message):
+    st.info(message)
+
+
+page_header(
+    page,
+    "Organização clara do acervo, dos leitores e das movimentações da biblioteca.",
+)
+
+if page == "Painel inicial":
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Livros cadastrados", len(livros))
     c2.metric("Leitores cadastrados", len(leitores))
-    c3.metric("Empréstimos ativos", sum(e["status"] == "Ativo" for e in emprestimos))
-    c4.metric("Reservas", len(reservas))
+    c3.metric("Empréstimos ativos", sum(item["status"] == "Ativo" for item in emprestimos))
+    c4.metric("Reservas pendentes", sum(item["status"] == "Pendente" for item in reservas))
 
-    st.subheader("Acervo disponível")
-    st.dataframe(
-        [
-            {
-                "Título": livro["titulo"],
-                "Autor": livro["autor"],
-                "Categoria": livro["categoria"],
-            }
-            for livro in livros
-        ],
-        use_container_width=True,
-        hide_index=True
-    )
-
-    st.info("Este protótipo utiliza dados fictícios mantidos durante a sessão.")
-
-
-elif pagina == "Livros":
-    st.subheader("Gerenciamento de livros")
-
-    with st.expander("➕ Cadastrar livro", expanded=False):
-        with st.form("form_livro_xano", clear_on_submit=True):
-            titulo = st.text_input("Título")
-            autor = st.text_input("Autor")
-            isbn = st.text_input("ISBN")
-            descricao = st.text_area("Descrição")
-
-            cadastrar = st.form_submit_button("Cadastrar livro")
-
-            if cadastrar:
-                if not titulo.strip() or not autor.strip():
-                    st.error("Preencha o título e o autor.")
-                else:
-                    try:
-                        resposta = requests.post(
-    f"{API_CATALOGO}/livros",
-    headers=HEADERS,
-    json={
-        "titulo": titulo.strip(),
-        "autor": autor.strip(),
-        "isbn": isbn.strip(),
-        "descricao": descricao.strip(),
-    },
-    timeout=15,
-)
-
-                        if resposta.status_code in (200, 201):
-                            st.success("Livro cadastrado no Xano!")
-                            st.rerun()
-                        else:
-                            st.error(
-                                f"Erro ao cadastrar: HTTP {resposta.status_code}"
-                            )
-                            st.code(resposta.text[:1000])
-
-                    except requests.RequestException as erro:
-                        st.error(f"Não foi possível conectar ao Xano: {erro}")
-
-    busca = st.text_input("Pesquisar por título ou autor")
-
-    try:
-        resposta = requests.get(
-            f"{API_CATALOGO}/livros",
-            params={"Busca": busca, "page": 1},
-            timeout=15,
-        )
-        resposta.raise_for_status()
-        resultado = resposta.json()
-
-        lista_livros = (
-            resultado.get("items", [])
-            if isinstance(resultado, dict)
-            else resultado
-        )
-
+    st.markdown("### Acervo disponível")
+    if livros:
         st.dataframe(
-            [
-                {
-                    "ID": livro.get("id"),
-                    "Título": livro.get("titulo", ""),
-                    "Autor": livro.get("autor", ""),
-                    "ISBN": livro.get("isbn", ""),
-                    "Descrição": livro.get("descricao", ""),
-                }
-                for livro in lista_livros
-            ],
-            use_container_width=True,
+            [{"Título": book["titulo"], "Autor": book["autor"], "Categoria": book["categoria"]} for book in livros],
+            width="stretch",
             hide_index=True,
         )
+    else:
+        empty_message("Não há livros cadastrados para apresentar no painel.")
+    st.info("Dados de demonstração mantidos somente durante a sessão.")
 
-        if not lista_livros:
-            st.info("Nenhum livro encontrado no Xano.")
+elif page == "Livros":
+    with st.expander("Cadastrar novo livro", expanded=False):
+        with st.form("form_livro", clear_on_submit=True):
+            title = st.text_input("Título")
+            author = st.text_input("Autor")
+            category = st.selectbox(
+                "Categoria",
+                st.session_state.categorias,
+                index=0 if st.session_state.categorias else None,
+            )
+            isbn = st.text_input("ISBN")
+            description = st.text_area("Descrição")
+            submitted = st.form_submit_button("Salvar livro")
+            if submitted:
+                if not title.strip() or not author.strip():
+                    st.error("Preencha o título e o autor.")
+                elif isbn.strip() and any(book["isbn"].strip().lower() == isbn.strip().lower() for book in livros):
+                    st.warning("Já existe um livro cadastrado com este ISBN.")
+                else:
+                    new_id = max((book["id"] for book in livros), default=0) + 1
+                    livros.append({
+                        "id": new_id,
+                        "titulo": title.strip(),
+                        "autor": author.strip(),
+                        "categoria": category,
+                        "isbn": isbn.strip(),
+                        "descricao": description.strip(),
+                    })
+                    st.success("Livro cadastrado com sucesso.")
+                    st.rerun()
 
-    except (requests.RequestException, ValueError) as erro:
-        st.error(f"Erro ao consultar livros no Xano: {erro}")
+    search = st.text_input("Pesquisar por título, autor ou ISBN")
+    filtered = [
+        book for book in livros
+        if search.lower() in f'{book["titulo"]} {book["autor"]} {book["isbn"]}'.lower()
+    ]
+    if filtered:
+        st.dataframe(
+            [{
+                "ID": book["id"],
+                "Título": book["titulo"],
+                "Autor": book["autor"],
+                "Categoria": book["categoria"],
+                "ISBN": book["isbn"] or "—",
+            } for book in filtered],
+            width="stretch",
+            hide_index=True,
+        )
+    else:
+        empty_message("Nenhum livro corresponde aos critérios informados.")
 
-elif pagina == "Categorias":
-    st.subheader("Gerenciamento de categorias")
+elif page == "Categorias":
     with st.form("form_categoria", clear_on_submit=True):
-        categoria = st.text_input("Nome da categoria")
-        adicionar = st.form_submit_button("Adicionar categoria")
-        if adicionar:
-            if not categoria.strip():
+        category = st.text_input("Nome da categoria")
+        submitted = st.form_submit_button("Adicionar categoria")
+        if submitted:
+            if not category.strip():
                 st.error("Digite o nome da categoria.")
-            elif categoria.strip() in st.session_state.categorias:
+            elif category.strip().lower() in {item.lower() for item in st.session_state.categorias}:
                 st.warning("Essa categoria já existe.")
             else:
-                st.session_state.categorias.append(categoria.strip())
+                st.session_state.categorias.append(category.strip())
                 st.success("Categoria adicionada.")
                 st.rerun()
 
-    st.dataframe(
-        [{"Categoria": c} for c in st.session_state.categorias],
-        use_container_width=True,
-        hide_index=True
-    )
+    if st.session_state.categorias:
+        st.dataframe(
+            [{"Categoria": item} for item in st.session_state.categorias],
+            width="stretch",
+            hide_index=True,
+        )
+    else:
+        empty_message("Não há categorias cadastradas.")
 
-elif pagina == "Leitores":
-    st.subheader("Gerenciamento de leitores")
+elif page == "Leitores":
     with st.form("form_leitor", clear_on_submit=True):
-        nome = st.text_input("Nome completo")
+        name = st.text_input("Nome completo")
         email = st.text_input("E-mail")
-        telefone = st.text_input("Telefone")
-        cadastrar = st.form_submit_button("Cadastrar leitor")
-        if cadastrar:
-            if not nome.strip() or not email.strip():
+        phone = st.text_input("Telefone")
+        submitted = st.form_submit_button("Cadastrar leitor")
+        if submitted:
+            if not name.strip() or not email.strip():
                 st.error("Preencha o nome e o e-mail.")
-            elif any(l["email"].lower() == email.strip().lower() for l in leitores):
-                st.error("Este e-mail já está cadastrado.")
+            elif any(reader["email"].lower() == email.strip().lower() for reader in leitores):
+                st.warning("Este e-mail já está cadastrado.")
             else:
-                novo_id = max([l["id"] for l in leitores], default=0) + 1
                 leitores.append({
-                    "id": novo_id,
-                    "nome": nome.strip(),
+                    "id": max((reader["id"] for reader in leitores), default=0) + 1,
+                    "nome": name.strip(),
                     "email": email.strip(),
-                    "telefone": telefone.strip(),
+                    "telefone": phone.strip(),
                 })
                 st.success("Leitor cadastrado.")
                 st.rerun()
 
-    st.dataframe(leitores, use_container_width=True, hide_index=True)
-
-elif pagina == "Exemplares":
-    st.subheader("Gerenciamento de exemplares")
-    if not livros:
-        st.warning("Cadastre um livro primeiro.")
+    if leitores:
+        st.dataframe(leitores, width="stretch", hide_index=True)
     else:
-        opcoes = {f'{l["id"]} — {l["titulo"]}': l["id"] for l in livros}
+        empty_message("Não há leitores cadastrados.")
+
+elif page == "Exemplares":
+    if not livros:
+        st.warning("Cadastre pelo menos um livro antes de adicionar exemplares.")
+    else:
+        book_options = {f'{book["id"]} — {book["titulo"]}': book["id"] for book in livros}
         with st.form("form_exemplar", clear_on_submit=True):
-            livro_escolhido = st.selectbox("Livro", list(opcoes))
-            codigo = st.text_input("Código do exemplar")
-            situacao = st.selectbox("Situação", ["Disponível", "Em manutenção"])
-            cadastrar = st.form_submit_button("Cadastrar exemplar")
-            if cadastrar:
-                if not codigo.strip():
+            book_label = st.selectbox("Livro", list(book_options))
+            code = st.text_input("Código do exemplar")
+            situation = st.selectbox("Situação", ["Disponível", "Em manutenção"])
+            submitted = st.form_submit_button("Cadastrar exemplar")
+            if submitted:
+                if not code.strip():
                     st.error("Informe o código do exemplar.")
-                elif any(e["codigo"] == codigo.strip() for e in exemplares):
-                    st.error("Este código já existe.")
+                elif any(item["codigo"].lower() == code.strip().lower() for item in exemplares):
+                    st.warning("Este código já existe.")
                 else:
                     exemplares.append({
-                        "codigo": codigo.strip(),
-                        "livro_id": opcoes[livro_escolhido],
-                        "situacao": situacao,
+                        "codigo": code.strip(),
+                        "livro_id": book_options[book_label],
+                        "situacao": situation,
                     })
                     st.success("Exemplar cadastrado.")
                     st.rerun()
 
-    st.dataframe(
-        [
-            {
-                "Código": ex["codigo"],
-                "Livro": nome_livro(ex["livro_id"]),
-                "Situação": ex["situacao"],
-            }
-            for ex in exemplares
-        ],
-        use_container_width=True,
-        hide_index=True
-    )
+    if exemplares:
+        st.dataframe(
+            [{"Código": item["codigo"], "Livro": book_name(item["livro_id"]), "Situação": item["situacao"]} for item in exemplares],
+            width="stretch",
+            hide_index=True,
+        )
+    else:
+        empty_message("Não há exemplares cadastrados.")
 
-elif pagina == "Empréstimos":
-    st.subheader("Registrar empréstimo")
-    disponiveis = [
-        ex for ex in exemplares
-        if ex["situacao"] == "Disponível"
+elif page == "Empréstimos":
+    available_copies = [
+        item for item in exemplares
+        if item["situacao"] == "Disponível"
         and not any(
-            e["exemplar_codigo"] == ex["codigo"] and e["status"] == "Ativo"
-            for e in emprestimos
+            loan["exemplar_codigo"] == item["codigo"] and loan["status"] == "Ativo"
+            for loan in emprestimos
         )
     ]
 
     if not leitores:
-        st.warning("Cadastre um leitor primeiro.")
-    elif not disponiveis:
+        st.warning("Cadastre um leitor antes de registrar empréstimos.")
+    elif not available_copies:
         st.warning("Não há exemplares disponíveis para empréstimo.")
     else:
-        leitores_opcoes = {
-            f'{l["id"]} — {l["nome"]}': l["id"] for l in leitores
-        }
-        exemplares_opcoes = {
-            f'{ex["codigo"]} — {nome_livro(ex["livro_id"])}': ex["codigo"]
-            for ex in disponiveis
-        }
-        with st.form("form_emprestimo"):
-            leitor = st.selectbox("Leitor", list(leitores_opcoes))
-            exemplar = st.selectbox("Exemplar", list(exemplares_opcoes))
-            data_emprestimo = st.date_input("Data do empréstimo", value=date.today())
-            registrar = st.form_submit_button("Registrar empréstimo")
-            if registrar:
+        reader_options = {f'{reader["id"]} — {reader["nome"]}': reader["id"] for reader in leitores}
+        copy_options = {f'{item["codigo"]} — {book_name(item["livro_id"])}': item["codigo"] for item in available_copies}
+        with st.form("form_emprestimo", clear_on_submit=True):
+            reader_label = st.selectbox("Leitor", list(reader_options))
+            copy_label = st.selectbox("Exemplar", list(copy_options))
+            loan_date = st.date_input("Data do empréstimo", value=date.today())
+            submitted = st.form_submit_button("Registrar empréstimo")
+            if submitted:
+                copy_code = copy_options[copy_label]
+                copy = next(item for item in exemplares if item["codigo"] == copy_code)
+                copy["situacao"] = "Emprestado"
                 emprestimos.append({
-                    "id": max([e["id"] for e in emprestimos], default=0) + 1,
-                    "leitor_id": leitores_opcoes[leitor],
-                    "exemplar_codigo": exemplares_opcoes[exemplar],
-                    "livro_id": next(
-                        ex["livro_id"] for ex in exemplares
-                        if ex["codigo"] == exemplares_opcoes[exemplar]
-                    ),
-                    "data": data_emprestimo,
-                    "prevista": data_emprestimo + timedelta(days=7),
+                    "id": max((loan["id"] for loan in emprestimos), default=0) + 1,
+                    "leitor_id": reader_options[reader_label],
+                    "exemplar_codigo": copy_code,
+                    "livro_id": copy["livro_id"],
+                    "data": loan_date,
+                    "prevista": loan_date + timedelta(days=7),
                     "status": "Ativo",
                 })
                 st.success("Empréstimo registrado. Prazo padrão: 7 dias.")
                 st.rerun()
 
-    st.subheader("Histórico de empréstimos")
-    st.dataframe(
-        [
-            {
-                "ID": e["id"],
-                "Leitor": next(
-                    (l["nome"] for l in leitores if l["id"] == e["leitor_id"]),
-                    "Leitor não encontrado",
-                ),
-                "Livro": nome_livro(e["livro_id"]),
-                "Exemplar": e["exemplar_codigo"],
-                "Data": e["data"],
-                "Devolução prevista": e["prevista"],
-                "Situação": e["status"],
-            }
-            for e in emprestimos
-        ],
-        use_container_width=True,
-        hide_index=True
-    )
-
-elif pagina == "Devoluções":
-    st.subheader("Registrar devolução")
-    ativos = [e for e in emprestimos if e["status"] == "Ativo"]
-    if not ativos:
-        st.info("Não há empréstimos ativos.")
+    if emprestimos:
+        st.markdown("### Histórico de empréstimos")
+        st.dataframe(
+            [{
+                "ID": loan["id"],
+                "Leitor": reader_name(loan["leitor_id"]),
+                "Livro": book_name(loan["livro_id"]),
+                "Exemplar": loan["exemplar_codigo"],
+                "Data": loan["data"],
+                "Devolução prevista": loan["prevista"],
+                "Situação": loan["status"],
+            } for loan in emprestimos],
+            width="stretch",
+            hide_index=True,
+        )
     else:
-        opcoes = {
-            f'Empréstimo {e["id"]} — {nome_livro(e["livro_id"])} — {e["exemplar_codigo"]}': e["id"]
-            for e in ativos
+        empty_message("Não há empréstimos registrados.")
+
+elif page == "Devoluções":
+    active_loans = [loan for loan in emprestimos if loan["status"] == "Ativo"]
+    if not active_loans:
+        st.info("Não há empréstimos ativos para devolução.")
+    else:
+        loan_options = {
+            f'Empréstimo {loan["id"]} — {book_name(loan["livro_id"])} — {loan["exemplar_codigo"]}': loan["id"]
+            for loan in active_loans
         }
-        escolhido = st.selectbox("Empréstimo", list(opcoes))
-        if st.button("Confirmar devolução"):
-            emprestimo_id = opcoes[escolhido]
-            for e in emprestimos:
-                if e["id"] == emprestimo_id:
-                    e["status"] = "Devolvido"
-                    e["data_devolucao"] = date.today()
+        selected = st.selectbox("Empréstimo", list(loan_options))
+        if st.button("Confirmar devolução", width="content"):
+            loan_id = loan_options[selected]
+            loan = next(item for item in emprestimos if item["id"] == loan_id)
+            loan["status"] = "Devolvido"
+            loan["data_devolucao"] = date.today()
+            copy = next((item for item in exemplares if item["codigo"] == loan["exemplar_codigo"]), None)
+            if copy:
+                copy["situacao"] = "Disponível"
             st.success("Devolução registrada.")
             st.rerun()
 
-    devolvidos = [e for e in emprestimos if e["status"] == "Devolvido"]
-    if devolvidos:
-        st.subheader("Devoluções realizadas")
+    returned_loans = [loan for loan in emprestimos if loan["status"] == "Devolvido"]
+    if returned_loans:
+        st.markdown("### Devoluções realizadas")
         st.dataframe(
-            [
-                {
-                    "Livro": nome_livro(e["livro_id"]),
-                    "Exemplar": e["exemplar_codigo"],
-                    "Data da devolução": e["data_devolucao"],
-                }
-                for e in devolvidos
-            ],
-            use_container_width=True,
-            hide_index=True
+            [{"Livro": book_name(loan["livro_id"]), "Exemplar": loan["exemplar_codigo"], "Data da devolução": loan["data_devolucao"]} for loan in returned_loans],
+            width="stretch",
+            hide_index=True,
         )
 
-elif pagina == "Reservas":
-    st.subheader("Gerenciamento de reservas")
+elif page == "Reservas":
     if not leitores or not livros:
         st.warning("Cadastre leitores e livros antes de criar reservas.")
     else:
-        leitores_opcoes = {
-            f'{l["id"]} — {l["nome"]}': l["id"] for l in leitores
-        }
-        livros_opcoes = {
-            f'{l["id"]} — {l["titulo"]}': l["id"] for l in livros
-        }
+        reader_options = {f'{reader["id"]} — {reader["nome"]}': reader["id"] for reader in leitores}
+        book_options = {f'{book["id"]} — {book["titulo"]}': book["id"] for book in livros}
         with st.form("form_reserva", clear_on_submit=True):
-            leitor = st.selectbox("Leitor", list(leitores_opcoes))
-            livro = st.selectbox("Livro", list(livros_opcoes))
-            data_reserva = st.date_input("Data da reserva", value=date.today())
-            registrar = st.form_submit_button("Registrar reserva")
-            if registrar:
+            reader_label = st.selectbox("Leitor", list(reader_options))
+            book_label = st.selectbox("Livro", list(book_options))
+            reserve_date = st.date_input("Data da reserva", value=date.today())
+            submitted = st.form_submit_button("Registrar reserva")
+            if submitted:
                 reservas.append({
-                    "id": max([r["id"] for r in reservas], default=0) + 1,
-                    "leitor_id": leitores_opcoes[leitor],
-                    "livro_id": livros_opcoes[livro],
-                    "data": data_reserva,
+                    "id": max((reservation["id"] for reservation in reservas), default=0) + 1,
+                    "leitor_id": reader_options[reader_label],
+                    "livro_id": book_options[book_label],
+                    "data": reserve_date,
                     "status": "Pendente",
                 })
                 st.success("Reserva registrada.")
                 st.rerun()
 
-    st.dataframe(
-        [
-            {
-                "ID": r["id"],
-                "Leitor": next(
-                    (l["nome"] for l in leitores if l["id"] == r["leitor_id"]),
-                    "Leitor não encontrado",
-                ),
-                "Livro": nome_livro(r["livro_id"]),
-                "Data": r["data"],
-                "Situação": r["status"],
-            }
-            for r in reservas
-        ],
-        use_container_width=True,
-        hide_index=True
-    )
+    if reservas:
+        st.dataframe(
+            [{
+                "ID": reservation["id"],
+                "Leitor": reader_name(reservation["leitor_id"]),
+                "Livro": book_name(reservation["livro_id"]),
+                "Data": reservation["data"],
+                "Situação": reservation["status"],
+            } for reservation in reservas],
+            width="stretch",
+            hide_index=True,
+        )
+    else:
+        empty_message("Não há reservas registradas.")
 
 st.divider()
-st.caption("NossaBiblioteca • Protótipo acadêmico • Dados fictícios")
+st.caption("NossaBiblioteca • Interface acadêmica • Dados demonstrativos da sessão")

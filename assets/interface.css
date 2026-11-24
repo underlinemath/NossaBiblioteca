@@ -1,5 +1,5 @@
 :root {
-    --library-bg: none;
+    --library-bg: {{LIBRARY_BG}};
     --page-overlay: {{PAGE_OVERLAY}};
     --glass-bg: {{GLASS_BG}};
     --glass-strong: {{GLASS_STRONG}};
